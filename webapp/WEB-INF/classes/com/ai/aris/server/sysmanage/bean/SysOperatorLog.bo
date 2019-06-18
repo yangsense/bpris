@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="dbsource" name="SysOperatorLog" mainattr="LOG_ID">
+    <mapingenty type="table">SYS_OPERATE_LOG</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="LOG_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">LOG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_CODE" maxlength="25" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OPERATOR_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_TYPE" maxlength="30" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATOR_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_DESC" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATOR_DESC</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

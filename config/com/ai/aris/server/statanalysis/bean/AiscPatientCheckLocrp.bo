@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscPatientCheckLocrp" mainattr="ID">
+    <mapingenty type="table">AISC_PATIENT_CHECK_LOCRP</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="8" datatype="Long" type="PK" remark="主键" isDict="false">
+        <mapingcol datatype="NUMBER">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_CODE" maxlength="64" datatype="String" type="COL" remark="城市代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">CITY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_DESC" maxlength="64" datatype="String" type="COL" remark="城市名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">CITY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_CODE" maxlength="64" datatype="String" type="COL" remark="区县编码" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_DESC" maxlength="64" datatype="String" type="COL" remark="区县名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="64" datatype="String" type="COL" remark="机构编码" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_DESC" maxlength="64" datatype="String" type="COL" remark="机构名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_CODE" maxlength="64" datatype="String" type="COL" remark="科室编码" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_DESC" maxlength="64" datatype="String" type="COL" remark="科室名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHECK_DATE" maxlength="32" datatype="String" type="COL" remark="检查日期" isDict="false">
+        <mapingcol datatype="VARCHAR2">CHECK_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REGIST_NUM" maxlength="8" datatype="Long" type="COL" remark="登记数量" isDict="false">
+        <mapingcol datatype="NUMBER">REGIST_NUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COLLECT_NUM" maxlength="8" datatype="Long" type="COL" remark="采集数量" isDict="false">
+        <mapingcol datatype="NUMBER">COLLECT_NUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGE_NUM" maxlength="8" datatype="Long" type="COL" remark="图像数量" isDict="false">
+        <mapingcol datatype="NUMBER">IMAGE_NUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_NUM" maxlength="8" datatype="Long" type="COL" remark="报告数量" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_NUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHECKED_NUM" maxlength="8" datatype="Long" type="COL" remark="审核数量" isDict="false">
+        <mapingcol datatype="NUMBER">CHECKED_NUM</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

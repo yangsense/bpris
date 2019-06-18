@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryMedicalCountDetail" mainattr="COUNTY_DESC">
+    <mapingenty type="query">select  d.county_desc,d.county_code,b.study_datetime Sdatetime,b.org_id,(select org_name from sys_org s where b.org_id = s.org_id) org_name,b.study_starttime,b.study_endtime,a.patient_name,b.studyinfo_id,b.patient_age,a.patient_sex,b.study_accnumber,c.report_exam,c.report_result 
+                  from ais_patientinfo      a, 
+                       AIS_StudyInfo        b, 
+                       Ais_Studyreport      c, 
+                       AISC_AreaInstitution d 
+                 where a.patient_globalid = b.patient_globalid 
+                   and d.org_id = b.org_id 
+                   and b.studyinfo_id = c.studyinfo_id 
+                   and studystatus_code not in ('Cancel') </mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="COUNTY_DESC" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_CODE" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SDATETIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">SDATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_STARTTIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">STUDY_STARTTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ENDTIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">STUDY_ENDTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_AGE" maxlength="8" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_AGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_SEX" maxlength="8" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ACCNUMBER" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_ACCNUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_EXAM" maxlength="4000" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_EXAM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_RESULT" maxlength="4000" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_RESULT</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

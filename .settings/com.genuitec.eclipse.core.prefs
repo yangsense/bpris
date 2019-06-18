@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=webapp/common/taglibs.jsp,webapp/WEB-INF/pages/workstation/preEdit.jsp,src/com/ai/aris/server/webservice/service/AiStudyOutService.java
+validator.Unchecked=

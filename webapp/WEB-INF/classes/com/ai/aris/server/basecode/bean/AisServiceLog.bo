@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisServiceLog" mainattr="SERVICE_ID">
+    <mapingenty type="table">AIS_SERVICE_LOG</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="SERVICE_ID" maxlength="16" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">SERVICE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVICE_NAME" maxlength="100" datatype="String" type="COL" remark="服务名">
+        <mapingcol datatype="VARCHAR2">SERVICE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVICE_REQUEST" maxlength="4000" datatype="String" type="COL" remark="请求串">
+        <mapingcol datatype="VARCHAR2">SERVICE_REQUEST</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVICE_RESPONSE" maxlength="4000" datatype="String" type="COL" remark="返回串">
+        <mapingcol datatype="VARCHAR2">SERVICE_RESPONSE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUEST_TIME" maxlength="20" datatype="DateTime" type="COL" remark="请求时间">
+        <mapingcol datatype="TIMESTAMP(6)">REQUEST_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESPONSE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="响应时间">
+        <mapingcol datatype="TIMESTAMP(6)">RESPONSE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOTAL" maxlength="60" datatype="String" type="COL" remark="接口调用时长">
+        <mapingcol datatype="VARCHAR2">TOTAL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVICE_BAK" maxlength="4000" datatype="String" type="COL" remark="备用">
+        <mapingcol datatype="VARCHAR2">SERVICE_BAK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVICE_STATUS" maxlength="10" datatype="String" type="COL" remark="调用结果状态0成功1失败">
+        <mapingcol datatype="VARCHAR2">SERVICE_STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ERROR_INFO" maxlength="4000" datatype="String" type="COL" remark="异常信息">
+        <mapingcol datatype="VARCHAR2">ERROR_INFO</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

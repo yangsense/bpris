@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QueryStudyItem" mainattr="STUDYINFO_ID">
+    <mapingenty type="query">select t.studyinfo_id,WM_CONCAT(t.studyitem_desc) as studyitem_desc ,wm_concat(t.studyitem_bodyinfo) as  studyitem_bodyinfo  from AIS_StudyItemInfo t group by t.studyinfo_id
+</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_DESC" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_BODYINFO" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_BODYINFO</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

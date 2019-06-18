@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="SysOperatorOffice" mainattr="ID">
+    <mapingenty type="table">SYS_OPERATOR_OFFICE</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="30" datatype="String" type="PK" remark="ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RELATION_ID" maxlength="30" datatype="String" type="COL" remark="关系ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">RELATION_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_CODE" maxlength="100" datatype="String" type="COL" remark="操作员编码" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OFFICE_ID" maxlength="100" datatype="String" type="COL" remark="科室ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">OFFICE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIMES" maxlength="20" datatype="DateTime" type="COL" remark="创建时间" isDict="false">
+        <mapingcol datatype="DATE">CREATE_TIMES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="10" datatype="String" type="COL" remark="状态(0有效，1无效)" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="30" datatype="String" type="COL" remark="组织机构ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

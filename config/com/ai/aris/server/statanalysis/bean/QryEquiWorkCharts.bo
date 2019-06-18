@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryEquiWorkCharts" mainattr="EQUIPMENT_DESC">
+    <mapingenty type="query">select '' equipment_desc,9 StudyItem_Number,9.9 StudyItem_Price,'' careprov_name,
+9.9 report_id  from dual</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="EQUIPMENT_DESC" maxlength="0" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="CHAR">EQUIPMENT_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_NUMBER" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYITEM_NUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_PRICE" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYITEM_PRICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CAREPROV_NAME" maxlength="0" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="CHAR">CAREPROV_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

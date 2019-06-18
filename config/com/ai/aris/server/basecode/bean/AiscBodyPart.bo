@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscBodyPart" mainattr="BODYPART_CODE">
+    <mapingenty type="table">AISC_BODYPART</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="BODYPART_CODE" maxlength="8" datatype="String" type="PK" remark="部位代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_DESC" maxlength="18" datatype="String" type="COL" remark="部位描述" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_ENDESC" maxlength="32" datatype="String" type="COL" remark="部位描述（英文）" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_ORDER" maxlength="20" datatype="Long" type="COL" remark="部位排序" isDict="false">
+        <mapingcol datatype="NUMBER">BODYPART_ORDER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="24" datatype="String" type="COL" remark="机构ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_TYPE" maxlength="2" datatype="String" type="COL" remark="部位类型 1 大类部位  2 子类部位" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_PID" maxlength="20" datatype="Long" type="COL" remark="部位父节点ID" isDict="false">
+        <mapingcol datatype="NUMBER">BODYPART_PID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_PIDNAME" maxlength="64" datatype="String" type="COL" remark="上级部位名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART_PIDNAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

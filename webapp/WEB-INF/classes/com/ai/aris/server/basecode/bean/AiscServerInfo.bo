@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscServerInfo" mainattr="SERVER_ID">
+    <mapingenty type="table">AISC_SEVERINFO</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="SERVER_ID" maxlength="8" datatype="Long" type="PK" remark="主键">
+        <mapingcol datatype="NUMBER">SERVER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_NAME" maxlength="16" datatype="String" type="COL" remark="服务器名称">
+        <mapingcol datatype="VARCHAR2">SERVER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_IP" maxlength="32" datatype="String" type="COL" remark="服务器IP地址">
+        <mapingcol datatype="VARCHAR2">SERVER_IP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_PORT" maxlength="8" datatype="Long" type="COL" remark="端口号">
+        <mapingcol datatype="NUMBER">SERVER_PORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_TYPE" maxlength="1" datatype="Integer" type="COL" remark="服务器类型 1.存储服务，2 DICOM 服务器，3 消息服务器">
+        <mapingcol datatype="NUMBER">SERVER_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_USER" maxlength="32" datatype="String" type="COL" remark="用户名称">
+        <mapingcol datatype="VARCHAR2">SERVER_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_PASSWORD" maxlength="32" datatype="String" type="COL" remark="密码">
+        <mapingcol datatype="VARCHAR2">SERVER_PASSWORD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_ENABLED" maxlength="1" datatype="Integer" type="COL" remark="服务器是否可用">
+        <mapingcol datatype="NUMBER">SERVER_ENABLED</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

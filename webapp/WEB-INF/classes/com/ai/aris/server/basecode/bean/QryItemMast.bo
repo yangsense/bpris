@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryItemMast" mainattr="ITEMMAST_ID">
+    <mapingenty type="query">select distinct c.*,a.loc_id from AISC_OrdCat2Loc a, AISC_OrdSubCategory b, AISC_ItemMast c where a.OrdCat_ID = b.ordcategory_id and b.OrdSubCategory_ID = c.ordsubcategory_id and a.org_id=c.org_id</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ITEMMAST_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ORDSUBCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_CODE" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ITEMMAST_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_DESC" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ITEMMAST_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_ENDESC" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ITEMMAST_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_PRICE" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_PRICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_WEIGHT" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_WEIGHT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_EXPOSURECOUNT" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_EXPOSURECOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_SEVICE" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_SEVICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_ISENHANCED" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_ISENHANCED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCATEGORY_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ORDCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PY_INITIAL" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PY_INITIAL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

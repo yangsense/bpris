@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryTemplateTree" mainattr="TEMPLATEDIR_ID">
+    <mapingenty type="query">select t.*, g.loc_id, g.operator_id, (select count(1) from (select a.* from AISC_TemplateDIR a, AISC_TplDir2Loc c where c.TEMPLATEDIR_ID = a.TEMPLATEDIR_ID) a where a.templatedir_pdirid = t.templatedir_id) children from AISC_TemplateDIR t, AISC_TplDir2Loc g where g.TEMPLATEDIR_ID = t.TEMPLATEDIR_ID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="TEMPLATEDIR_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TEMPLATEDIR_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATEDIR_DESC" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TEMPLATEDIR_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATEDIR_ORDER" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TEMPLATEDIR_ORDER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATEDIR_ENABLED" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TEMPLATEDIR_ENABLED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATEDIR_PDIRID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TEMPLATEDIR_PDIRID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IS_DIRECTORY" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">IS_DIRECTORY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATEDIR_FLAG" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TEMPLATEDIR_FLAG</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY_ID" maxlength="2" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODALITY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">OPERATOR_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHILDREN" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CHILDREN</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

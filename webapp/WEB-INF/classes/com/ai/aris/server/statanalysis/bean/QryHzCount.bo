@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryHzCount" mainattr="ID">
+    <mapingenty type="table">AISC_HZ_COUNT_RP</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="8" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_CODE" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CITY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_DESC" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CITY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_CODE" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_DESC" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_CODE" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_DESC" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_CONSULTORGNAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_CONSULTORGNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_CONSULTLOCNAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_CONSULTLOCNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ID" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_AGE" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_AGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_SEX" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHECK_ITEM" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CHECK_ITEM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CAREPROV_NAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CAREPROV_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_DATETIME" maxlength="20" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">REPORT_DATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_APPDATE" maxlength="20" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">STUDY_APPDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHECK_DATE" maxlength="20" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">CHECK_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_DOC" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_DOC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHECK_DOC" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CHECK_DOC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HZ_COUNT" maxlength="20" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">HZ_COUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HZ_RESULTCOUNT" maxlength="20" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">HZ_RESULTCOUNT</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryOrgAndLocInfos" mainattr="ORG_ID">
+    <mapingenty type="query">select  
+  a.operator_id, 
+   a.org_id, 
+   (select org_name from sys_org b where a.org_id = b.org_id) org_name, 
+   a.loc_id, 
+   nvl((select loc_desc from aisc_loc c where a.loc_id = c.loc_id),' ') loc_desc  
+   from AISC_LoginLoc a</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="OPERATOR_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">OPERATOR_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_DESC</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

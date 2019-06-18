@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QrySeries" mainattr="SERIES_UID">
+    <mapingenty type="query">select t.seriesuid series_Uid,t.remarks series_Description,t.serieskey series_key ,
+t.seriesnumber series_number,t.studykey  study_key from series t </mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="SERIES_UID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SERIES_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIES_DESCRIPTION" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SERIES_DESCRIPTION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIES_KEY" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">SERIES_KEY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIES_NUMBER" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SERIES_NUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_KEY" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDY_KEY</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

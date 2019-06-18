@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscHisDatasource" mainattr="SOURCE_ID">
+    <mapingenty type="table">AISC_HIS_DATASOURCE</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="SOURCE_ID" maxlength="16" datatype="Long" type="PK" isDict="false">
+        <mapingcol datatype="NUMBER">SOURCE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" remark="组织机构ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="256" datatype="String" type="COL" remark="组织名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOURCE_URL" maxlength="256" datatype="String" type="COL" remark="数据库访问URL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SOURCE_URL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOURCE_USER" maxlength="256" datatype="String" type="COL" remark="用户名" isDict="false">
+        <mapingcol datatype="VARCHAR2">SOURCE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOURCE_PASSWORD" maxlength="256" datatype="String" type="COL" remark="密码" isDict="false">
+        <mapingcol datatype="VARCHAR2">SOURCE_PASSWORD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATUS" maxlength="2" datatype="String" type="COL" remark="状态" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_TYPECODE" maxlength="24" datatype="String" type="COL" remark="病人类型 HP 体检 OP 门诊 " isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_TYPECODE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

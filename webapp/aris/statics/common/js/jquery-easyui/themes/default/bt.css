@@ -1,0 +1,11 @@
+
+.tDiv100{ background:url(../images/bg.gif) repeat-x top; height:30px; line-height:30px;  }
+.tDiv100 .tDiv2{}
+.tDiv100 .tDiv2 li{ float:left; margin:0 5px; padding:0 2px;}
+.tDiv100 .tDiv2 li a{ display:inline-block; text-decoration:none; color:#333; padding:0 3px; line-height:30px; }
+.tDiv100 .tDiv2 li a:hover{ background: url(../images/bg.gif) repeat-x bottom;}
+.tDiv100 .tDiv2 li .add{ background:url(../images/edit_add.png) no-repeat; height:16px; width:16px; display: inline-block; float:left; margin:5px 2px 0 3px;}
+.tDiv100 .tDiv2 li .modify{ background:url(../images/edit.gif) no-repeat; height:16px; width:16px; display: inline-block; float:left; margin:5px 2px 0 3px;}
+.tDiv100 .tDiv2 li .details{ background:url(../images/details.gif) no-repeat; height:16px; width:16px; display: inline-block; float:left; margin:5px 2px 0 3px;}
+.tDiv100 .tDiv2 li .delete{ background:url(../images/edit_remove.png) no-repeat; height:16px; width:16px; display: inline-block; float:left; margin:5px 2px 0 3px;}
+.tDiv100 .tDiv2 li .sorting{ background:url(../images/details.gif) no-repeat; height:16px; width:16px; display: inline-block; float:left; margin:5px 2px 0 3px;}

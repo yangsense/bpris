@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisReportUpload" mainattr="ID">
+    <mapingenty type="table">AIS_REPORT_UPLOAD</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="19" datatype="Long" type="COL" remark="id" isDict="false">
+        <mapingcol datatype="NUMBER">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_NAME" maxlength="500" datatype="String" type="COL" remark="文件名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">FILE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_CODE" maxlength="200" datatype="String" type="COL" remark="机构编码" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_NAME" maxlength="200" datatype="String" type="COL" remark="机构名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPLOADTIME" maxlength="20" datatype="DateTime" type="COL" remark="上传时间" isDict="false">
+        <mapingcol datatype="DATE">UPLOADTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ID" maxlength="19" datatype="Long" type="COL" remark="报告id" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="60" datatype="String" type="COL" remark="病人姓名" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ID" maxlength="60" datatype="String" type="COL" remark="病人id" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

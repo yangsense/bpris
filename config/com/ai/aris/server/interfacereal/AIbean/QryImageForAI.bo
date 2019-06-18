@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryImageForAI" mainattr="COMPLETED_0">
+    <mapingenty type="query">select b.*,a.accessionnumber from study a,event b,ais_studyinfo c where a.studyuid=b.studyuid and a.accessionnumber=c.study_accnumber</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="COMPLETED_0" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED_0</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPLETED_9" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED_9</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPLETED_8" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED_8</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPLETED_7" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED_7</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPLETED_6" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED_6</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPLETED_5" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED_5</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPLETED_4" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED_4</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPLETED_3" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED_3</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPLETED_2" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED_2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPLETED_1" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED_1</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EVENTSECONDS" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">EVENTSECONDS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPLETED" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COMPLETED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CALLEDAE" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CALLEDAE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CALLINGAE" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CALLINGAE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DCMROGFILENAME" maxlength="2048" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">DCMROGFILENAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DCMROGSERIEID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">DCMROGSERIEID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">MODALITY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIESUID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SERIESUID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYUID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYUID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENTID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENTID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOPINSTANCEUID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SOPINSTANCEUID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOPCLASS" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SOPCLASS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EVENTTIME" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">EVENTTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EVENTDATE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">EVENTDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ACCESSIONNUMBER" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ACCESSIONNUMBER</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

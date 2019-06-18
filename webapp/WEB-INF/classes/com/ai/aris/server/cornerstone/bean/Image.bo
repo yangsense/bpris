@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="Image" mainattr="PHOTOMETRICINTERPRETATION">
+    <mapingenty type="table">IMAGE</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PHOTOMETRICINTERPRETATION" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PHOTOMETRICINTERPRETATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PIXELREPRESENTATION" maxlength="10" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">PIXELREPRESENTATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SAMPLESPERPIXEL" maxlength="10" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">SAMPLESPERPIXEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HIGHBIT" maxlength="10" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">HIGHBIT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BITSSTORED" maxlength="10" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">BITSSTORED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NUMBEROFFRAMES" maxlength="10" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">NUMBEROFFRAMES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BITSALLOCATED" maxlength="10" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">BITSALLOCATED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COLUMNS" maxlength="10" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">COLUMNS_</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ROWS" maxlength="10" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ROWS_</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRESENCE" maxlength="1" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PRESENCE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ARCHIVED" maxlength="1" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ARCHIVED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DISKNUMBER" maxlength="10" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">DISKNUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PIXPM" maxlength="1024" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PIXPM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TRANSFORMS" maxlength="1024" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">TRANSFORMS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GRAPHATTR" maxlength="3000" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">GRAPHATTR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTENTTIME" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CONTENTTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTENTDATE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CONTENTDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILENAME" maxlength="1024" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">FILENAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOPCLASS" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SOPCLASS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIESKEY" maxlength="19" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">SERIESKEY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGENUMBER" maxlength="10" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">IMAGENUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGEUID" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">IMAGEUID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGEKEY" maxlength="19" datatype="Long" type="PK" isDict="false">
+        <mapingcol datatype="NUMBER">IMAGEKEY</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

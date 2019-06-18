@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisHzBackurl" mainattr="ORG_ID">
+    <mapingenty type="table">AIS_HZ_BACKURL</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="PK" remark="机构ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BACK_URL" maxlength="512" datatype="String" type="COL" remark="会诊记录回传接口地址" isDict="false">
+        <mapingcol datatype="VARCHAR2">BACK_URL</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

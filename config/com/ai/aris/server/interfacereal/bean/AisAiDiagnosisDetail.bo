@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisAiDiagnosisDetail" mainattr="STUDY_DETAIL_ID">
+    <mapingenty type="table">AIS_AI_DIAGNOSIS_DETAIL</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STUDY_DETAIL_ID" maxlength="16" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDY_DETAIL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GLOBAL_STUDY_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">GLOBAL_STUDY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NO" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHAPE" maxlength="20" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">SHAPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHAPEDESC" maxlength="4000" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SHAPEDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DCMNOLIST" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">DCMNOLIST</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MARKTYPE" maxlength="20" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">MARKTYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DESCRIPTION" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">DESCRIPTION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIESNO" maxlength="20" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">SERIESNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIESUID" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SERIESUID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

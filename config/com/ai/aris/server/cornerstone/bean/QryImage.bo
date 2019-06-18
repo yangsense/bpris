@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryImage" mainattr="IMAGE_UID">
+    <mapingenty type="query">select t.imageuid image_uid, t.imagekey image_key, substr(t.filename,6,3)||'/'|| t.filename image_id, t.serieskey series_key from IMAGE t</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="IMAGE_UID" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">IMAGE_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGE_KEY" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">IMAGE_KEY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGE_ID" maxlength="1031" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">IMAGE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIES_KEY" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">SERIES_KEY</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

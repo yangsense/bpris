@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryPatientIsHis" mainattr="PATIENT_GLOBALID">
+    <mapingenty type="query">select a.*,b.PATIENT_INPATIENTID,b.PATIENT_OUTPATIENTID from ais_patientinfo a ,ais_studyinfo b where a.patient_globalid=b.patient_globalid
+</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PATIENT_GLOBALID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">PATIENT_GLOBALID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ID" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAMEPY" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAMEPY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_DOB" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">PATIENT_DOB</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_AGE" maxlength="8" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_AGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_SEX" maxlength="8" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_IDNUMBER" maxlength="18" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_IDNUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_CARDID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_CARDID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_MEDICAREID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_MEDICAREID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_MOBILE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_MOBILE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_PHONE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_PHONE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_VOCATION" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_VOCATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NATION" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_STATION" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_STATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_STATUS" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_REMARK" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ADDRESS" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_ADDRESS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_INPATIENTID" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_INPATIENTID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_OUTPATIENTID" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_OUTPATIENTID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

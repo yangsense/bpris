@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscItemMast" mainattr="ITEMMAST_ID">
+    <mapingenty type="table">AISC_ITEMMAST</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ITEMMAST_ID" maxlength="8" datatype="Long" type="PK" remark="医嘱ID 主键" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_ID" maxlength="8" datatype="Long" type="COL" remark="医嘱子类ID" isDict="false">
+        <mapingcol datatype="NUMBER">ORDSUBCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_CODE" maxlength="64" datatype="String" type="COL" remark="医嘱代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">ITEMMAST_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_DESC" maxlength="128" datatype="String" type="COL" remark="医嘱名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">ITEMMAST_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_ENDESC" maxlength="256" datatype="String" type="COL" remark="医嘱名称（英文）" isDict="false">
+        <mapingcol datatype="VARCHAR2">ITEMMAST_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="2" name="ITEMMAST_PRICE" maxlength="5" datatype="Float" type="COL" remark="医嘱价格" isDict="true" dictDesc="itemmastPriceDesc" dictType="AISC_ITEMMAST_ITEMMASTPRICE">
+        <mapingcol datatype="NUMBER">ITEMMAST_PRICE</mapingcol>
+      </attr>
+      <attr floatlength="2" name="ITEMMAST_WEIGHT" maxlength="4" datatype="Float" type="COL" remark="检查项目权重" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_WEIGHT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_EXPOSURECOUNT" maxlength="2" datatype="Integer" type="COL" remark="曝光次数" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_EXPOSURECOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_SEVICE" maxlength="1" datatype="Integer" type="COL" remark="服务标志1检查项目,2材料（注射针筒等),3药品（造影剂等）
+" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_SEVICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_ISENHANCED" maxlength="1" datatype="Integer" type="COL" remark="增强标志 1增强检查,2不需要增强" isDict="false">
+        <mapingcol datatype="NUMBER">ITEMMAST_ISENHANCED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCATEGORY_ID" maxlength="8" datatype="Long" type="COL" remark="医嘱大类ID" isDict="false">
+        <mapingcol datatype="NUMBER">ORDCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" remark="机构ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PY_INITIAL" maxlength="32" datatype="String" type="COL" remark="拼音首字母" isDict="false">
+        <mapingcol datatype="VARCHAR2">PY_INITIAL</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

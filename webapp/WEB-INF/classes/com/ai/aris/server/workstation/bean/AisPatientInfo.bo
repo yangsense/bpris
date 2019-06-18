@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisPatientInfo" mainattr="PATIENT_GLOBALID">
+    <mapingenty type="table">AIS_PATIENTINFO</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PATIENT_GLOBALID" maxlength="16" datatype="Long" type="PK" remark="全局ID, 主键" isDict="false">
+        <mapingcol datatype="NUMBER">PATIENT_GLOBALID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ID" maxlength="32" datatype="String" type="COL" remark="病人ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="64" datatype="String" type="COL" remark="病人姓名" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAMEPY" maxlength="64" datatype="String" type="COL" remark="姓名拼音" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAMEPY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_DOB" maxlength="20" datatype="DateTime" type="COL" remark="生日" isDict="false">
+        <mapingcol datatype="DATE">PATIENT_DOB</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_AGE" maxlength="8" datatype="String" type="COL" remark="年龄" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_AGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_SEX" maxlength="8" datatype="String" type="COL" remark="性别" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_IDNUMBER" maxlength="18" datatype="String" type="COL" remark="身份证号" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_IDNUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_CARDID" maxlength="32" datatype="String" type="COL" remark="卡号" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_CARDID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_MEDICAREID" maxlength="32" datatype="String" type="COL" remark="医保卡号" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_MEDICAREID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_MOBILE" maxlength="16" datatype="String" type="COL" remark="手机" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_MOBILE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_PHONE" maxlength="16" datatype="String" type="COL" remark="电话" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_PHONE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_VOCATION" maxlength="16" datatype="String" type="COL" remark="职业" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_VOCATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NATION" maxlength="16" datatype="String" type="COL" remark="名族代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_STATION" maxlength="16" datatype="String" type="COL" remark="国籍代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_STATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_STATUS" maxlength="2" datatype="String" type="COL" remark="病人状态
+正常：N
+停止：S
+" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_REMARK" maxlength="64" datatype="String" type="COL" remark="备注" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ADDRESS" maxlength="128" datatype="String" type="COL" remark="地址" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_ADDRESS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

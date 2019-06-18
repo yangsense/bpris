@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QuerySysOperator2Org" mainattr="ORG_NAME">
+    <mapingenty type="query">SELECT DISTINCT E.ORG_ID , A.STATION_CODE, A.OPERATOR_CODE, E.PARENT_ORG_ID, E.ORG_NAME, (SELECT STATION_NAME FROM SYS_STATION C WHERE A.STATION_CODE = C.STATION_CODE) STATION_NAME, A.ORG_LEVEL,A.ORG_TYPE FROM SYS_OPERATOR2ORG A, SYS_ORG E WHERE A.ORG_ID= E.ORG_ID</mapingenty>
+     <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATION_CODE" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STATION_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_CODE" maxlength="25" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PARENT_ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PARENT_ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATION_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STATION_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_LEVEL" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_LEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_TYPE" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_TYPE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

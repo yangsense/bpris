@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryStudyReportInterface" mainattr="REPORT_ID">
+    <mapingenty type="query">select a.*,b.studystatus_code,b.org_Id,b.study_operationtime from ais_studyreport a,ais_studyinfo b where a.studyinfo_id=b.studyinfo_id
+</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="REPORT_HISTORY_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_HISTORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_DATETIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">REPORT_DATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_DOCTORID" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_DOCTORID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_VERIFYDATETIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">REPORT_VERIFYDATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_VERIFYDOCTORID" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_VERIFYDOCTORID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_FINALDATETIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">REPORT_FINALDATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_FINALDOCTORID" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_FINALDOCTORID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_RECORD" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_RECORD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ISVISIBLE" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_ISVISIBLE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ISPRINTED" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_ISPRINTED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ISSENT" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_ISSENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_PRINTDATETIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">REPORT_PRINTDATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_PRINTCAREPROVID" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_PRINTCAREPROVID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ISCOMPLETED" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_ISCOMPLETED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_UNCOMPLETEDREASON" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_UNCOMPLETEDREASON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_EXAMMETHOD" maxlength="1024" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_EXAMMETHOD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_EXAM" maxlength="4000" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_EXAM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_RESULT" maxlength="4000" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ISPOSITIVE" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_ISPOSITIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ICD10" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_ICD10</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ACRCODE" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_ACRCODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_REMARK" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REPORT_REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_LOCK" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_LOCK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATUS" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_NUM" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_NUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTRASTS_REMARK" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CONTRASTS_REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYSTATUS_CODE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYSTATUS_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_OPERATIONTIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">STUDY_OPERATIONTIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

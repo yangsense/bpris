@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryOrdCat2Loc" mainattr="LOC_CODE">
+    <mapingenty type="query">select distinct a.loc_code,a.loc_desc, b.*,c.ordcategory_code,c.ordcategory_desc,d.org_code,d.org_name
+from 
+aisc_loc a,
+aisc_ordcat2loc b,aisc_ordcategory c,sys_org d
+ where a.loc_id = b.loc_id and b.ordcat_id=c.ordcategory_id and b.org_id = d.org_id</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="LOC_CODE" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCAT2LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ORDCAT2LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCAT_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ORDCAT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCATEGORY_CODE" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORDCATEGORY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCATEGORY_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORDCATEGORY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_CODE" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

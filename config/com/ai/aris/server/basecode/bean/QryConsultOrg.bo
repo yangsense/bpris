@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryConsultOrg" mainattr="CONORGANIZAT_ID">
+    <mapingenty type="query">select a.*,
+       (select org_name from sys_org s where a.conorg_id = s.org_id) org_name
+  from AISC_Conorganization a
+
+</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="CONORGANIZAT_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CONORGANIZAT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONLOC_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONLOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

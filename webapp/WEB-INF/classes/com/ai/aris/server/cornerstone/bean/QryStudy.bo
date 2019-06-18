@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryStudy" mainattr="PATIENT_NAME">
+    <mapingenty type="query">select p.patientname patient_name ,p.patientid patient_id ,y.studydate  study_date ,y.modalitiesinstudy modality , 
+ y.studydescription study_description ,y.studyid study_id,y.studykey study_key, 
+ ( 
+ select count(i.imagekey) from image i ,series r  where y.studykey =r.studykey and r.serieskey = i.serieskey  
+ ) as num_images 
+from  patient p ,study y where p.patientkey =y.patientkey </mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_DATE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">MODALITY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_DESCRIPTION" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_DESCRIPTION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_KEY" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDY_KEY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NUM_IMAGES" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">NUM_IMAGES</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

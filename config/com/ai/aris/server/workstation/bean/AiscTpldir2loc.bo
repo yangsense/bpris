@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscTpldir2loc" mainattr="TPLCAT2LOC_ID">
+    <mapingenty type="table">AISC_TPLDIR2LOC</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="TPLCAT2LOC_ID" maxlength="8" datatype="Long" type="PK" remark="主键">
+        <mapingcol datatype="NUMBER">TPLCAT2LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY_ID" maxlength="8" datatype="Long" type="COL" remark="设备类型ID">
+        <mapingcol datatype="NUMBER">MODALITY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="8" datatype="Long" type="COL" remark="科室ID">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_ID" maxlength="8" datatype="Long" type="COL" remark="sys_operator  ID">
+        <mapingcol datatype="NUMBER">OPERATOR_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATEDIR_ID" maxlength="8" datatype="Long" type="COL" remark="模板顶层目录">
+        <mapingcol datatype="NUMBER">TEMPLATEDIR_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="8" datatype="Long" type="COL" remark="组织机构ID">
+        <mapingcol datatype="NUMBER">ORG_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

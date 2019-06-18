@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="SysStation" mainattr="STATION_CODE">
+    <mapingenty type="table">SYS_STATION</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STATION_CODE" maxlength="64" datatype="String" type="PK" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATION_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATION_NAME" maxlength="50" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATION_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SYS_TYPE" maxlength="20" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">SYS_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="50" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

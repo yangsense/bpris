@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryHzRecordList" mainattr="PATIENT_NAME">
+    <mapingenty type="query">select b.patient_name,
+       b.patient_sex,
+       a.patient_age,
+       a.org_id,
+       a.study_consultorg,
+       a.loc_id,
+       a.study_consultloc,
+       (select org_name from sys_org s where a.org_id = s.org_id) org_name,
+       (select loc_desc from aisc_loc where loc_id = a.loc_id) loc_desc,
+       (select operator_name
+          from sys_operator
+         where operator_id = a.study_operationid) operator_name,
+       c.report_datetime,
+       (select org_name from sys_org s where a.study_consultorg = s.org_id) study_consultorgName,
+       (select loc_desc from aisc_loc where loc_id = a.study_consultloc) study_consultlocName,
+       (select operator_name
+                          from sys_operator
+                         where operator_id = c.report_doctorid)  CAREPROV_NAME,
+       a.study_datetime
+  from ais_studyinfo a, ais_patientinfo b, ais_studyreport c
+ where a.patient_globalid = b.patient_globalid
+   and a.studyinfo_id = c.studyinfo_id
+   and study_type = '1'
+</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_SEX" maxlength="8" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_AGE" maxlength="8" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_AGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_CONSULTORG" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_CONSULTORG</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_CONSULTLOC" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDY_CONSULTLOC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_DESC" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_NAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_DATETIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">REPORT_DATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_CONSULTORGNAME" maxlength="200" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_CONSULTORGNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_CONSULTLOCNAME" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_CONSULTLOCNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CAREPROV_NAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CAREPROV_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_DATETIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">STUDY_DATETIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

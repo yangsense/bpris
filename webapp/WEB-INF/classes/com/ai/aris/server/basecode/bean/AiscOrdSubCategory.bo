@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscOrdSubCategory" mainattr="ORDSUBCATEGORY_ID">
+    <mapingenty type="table">AISC_ORDSUBCATEGORY</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORDSUBCATEGORY_ID" maxlength="8" datatype="Long" type="PK" remark="主键" isDict="false">
+        <mapingcol datatype="NUMBER">ORDSUBCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCATEGORY_ID" maxlength="8" datatype="Long" type="COL" remark="大类表主键" isDict="false">
+        <mapingcol datatype="NUMBER">ORDCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_CODE" maxlength="16" datatype="String" type="COL" remark="子类代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_DESC" maxlength="32" datatype="String" type="COL" remark="子类描述" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_ENDESC" maxlength="48" datatype="String" type="COL" remark="子类描述（英文）" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_NOTE" maxlength="2048" datatype="String" type="COL" remark="备注信息" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_NOTE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

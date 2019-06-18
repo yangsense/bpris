@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="Series" mainattr="STATIONNAME">
+    <mapingenty type="table">SERIES</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STATIONNAME" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATIONNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">MODALITY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYKEY" maxlength="19" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYKEY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIESNUMBER" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SERIESNUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIESUID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SERIESUID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERIESKEY" maxlength="19" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">SERIESKEY</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

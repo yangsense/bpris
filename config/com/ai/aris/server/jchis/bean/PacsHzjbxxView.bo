@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="orcl" name="PacsHzjbxxView" mainattr="DJXH">
+    <mapingenty type="query">select * from pacs_hzjbxx_view</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DJXH" maxlength="12" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DJXH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BRXM" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BRXM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="XB" maxlength="2" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">XB</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BIRTH" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BIRTH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LXDH" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LXDH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ZYH" maxlength="10" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ZYH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="JBMC" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">JBMC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MZH" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MZH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BRLX" maxlength="3" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BRLX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SQKSDM" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SQKSDM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SQKS" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SQKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SQYS" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SQYS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BQ" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BQ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CH" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SFZH" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SFZH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DZ" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DZ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="KH" maxlength="0" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">KH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="YZDM" maxlength="40" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">YZDM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="YZMC" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">YZMC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ZJE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ZJE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SJH" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SJH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ZXKSDM" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ZXKSDM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="JGDM" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">JGDM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ZXSJ" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">ZXSJ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HISSQH" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">HISSQH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SQYSDM" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SQYSDM</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

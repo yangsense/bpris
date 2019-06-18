@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryAiscBodyPart" mainattr="BODYPART_CODE">
+    <mapingenty type="query">select a.bodypart_code,
+       a.bodypart_desc,
+       a.bodypart_endesc,
+       a.bodypart_order,
+       a.org_id,
+       a.bodypart_type,
+       a.bodypart_pid,
+       decode(a.bodypart_type, '1', '大部位', 2, '子部位') bodypart_typedesc,
+       (select bodypart_desc
+          from aisc_bodypart
+         where bodypart_code = a.bodypart_pid) last_bodypart,
+       (select org_name from sys_org where org_id = a.org_id) org_name
+  from aisc_bodypart a</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="BODYPART_CODE" maxlength="8" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_DESC" maxlength="18" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_ENDESC" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_ORDER" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">BODYPART_ORDER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="24" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_TYPE" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_PID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">BODYPART_PID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_TYPEDESC" maxlength="6" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">BODYPART_TYPEDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LAST_BODYPART" maxlength="18" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">LAST_BODYPART</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

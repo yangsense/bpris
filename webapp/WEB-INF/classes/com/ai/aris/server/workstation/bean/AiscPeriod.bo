@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscPeriod" mainattr="ID">
+    <mapingenty type="table">AISC_PERIOD</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="20" datatype="Long" type="PK" remark="ID">
+        <mapingcol datatype="NUMBER">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PERIOD_ID" maxlength="64" datatype="String" type="COL" remark="时段ID">
+        <mapingcol datatype="VARCHAR2">PERIOD_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PERIOD_DESC" maxlength="64" datatype="String" type="COL" remark="时段描述">
+        <mapingcol datatype="VARCHAR2">PERIOD_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PERIOD_STARTTIME" maxlength="64" datatype="String" type="COL" remark="开始时间">
+        <mapingcol datatype="VARCHAR2">PERIOD_STARTTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PERIOD_ENDTIME" maxlength="64" datatype="String" type="COL" remark="结束时间">
+        <mapingcol datatype="VARCHAR2">PERIOD_ENDTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

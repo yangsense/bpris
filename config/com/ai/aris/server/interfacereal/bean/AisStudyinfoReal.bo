@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisStudyinfoReal" mainattr="STUDYINFO_REAL_ID">
+    <mapingenty type="table">AIS_STUDYINFO_REAL</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STUDYINFO_REAL_ID" maxlength="8" datatype="Long" type="PK" remark="接口科室信息关系表ID 主键">
+        <mapingcol datatype="NUMBER">STUDYINFO_REAL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="8" datatype="Long" type="COL" remark="检查登记ID">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OLD_STUDYINFO_ID" maxlength="8" datatype="Long" type="COL" remark="目标数据源检查登记ID">
+        <mapingcol datatype="NUMBER">OLD_STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" remark="机构ID">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

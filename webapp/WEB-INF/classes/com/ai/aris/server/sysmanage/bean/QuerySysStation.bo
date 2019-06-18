@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QuerySysStation" mainattr="STATION_CODE">
+    <mapingenty type="query">select M.STATION_CODE, M.STATION_NAME ||'-'|| N.MENU_NAME  as STATION_NAME, M.REMARK, M.SYS_TYPE
+  from SYS_STATION M ,SYS_MENU N
+ where M.SYS_TYPE = N.MENU_ID</mapingenty>
+  <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STATION_CODE" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STATION_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATION_NAME" maxlength="151" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STATION_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SYS_TYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SYS_TYPE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

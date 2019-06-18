@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscLoc" mainattr="LOC_ID">
+    <mapingenty type="table">AISC_LOC</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="LOC_ID" maxlength="8" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_CODE" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_INDEX" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_INDEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ENDESC" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_PHONE" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_PHONE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ADDRESS" maxlength="128" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_ADDRESS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_TYPE" maxlength="2" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">LOC_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_ID" maxlength="8" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SERVER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

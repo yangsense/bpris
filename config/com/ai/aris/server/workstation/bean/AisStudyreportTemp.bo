@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisStudyreportTemp" mainattr="STUDYINFO_ID">
+    <mapingenty type="table">AIS_STUDYREPORT_TEMP</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="19" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_REMARK" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REPORT_REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_RESULT" maxlength="20"  datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REPORT_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_EXAM" maxlength="20"   datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REPORT_EXAM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_DATETIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">REPORT_DATETIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

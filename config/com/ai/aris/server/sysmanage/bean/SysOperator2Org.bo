@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="dbsource" name="SysOperator2Org" mainattr="OPERATOR_CODE">
+    <mapingenty type="table">SYS_OPERATOR2ORG</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="OPERATOR_CODE" maxlength="25" datatype="String" type="PK" remark="操作员工号">
+        <mapingcol datatype="VARCHAR2">OPERATOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="PK" remark="机构编码或者区域编码">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATION_CODE" maxlength="20" datatype="String" type="PK" remark="岗位编码">
+        <mapingcol datatype="VARCHAR2">STATION_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INCLUDESUBORG" maxlength="1" datatype="String" type="COL" remark="是否包含子节点（保留）">
+        <mapingcol datatype="VARCHAR2">INCLUDESUBORG</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="500" datatype="String" type="COL" remark="备注">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_TYPE" maxlength="32" datatype="String" type="COL" remark="0=机构；1=区域">
+        <mapingcol datatype="VARCHAR2">ORG_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_LEVEL" maxlength="32" datatype="String" type="COL" remark="机构或区域的层级">
+        <mapingcol datatype="VARCHAR2">ORG_LEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PARENT_ORG_ID" maxlength="32" datatype="String" type="COL" remark="区域父节点">
+        <mapingcol datatype="VARCHAR2">PARENT_ORG_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

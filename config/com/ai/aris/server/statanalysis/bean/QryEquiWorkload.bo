@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryEquiWorkload" mainattr="C_STUDY_DATETIME">
+    <mapingenty type="query">select to_char(a.Study_startTime, 'yyyy-mm-dd') c_Study_DateTime,
+       a.loc_id,
+       a.org_id,
+       c.modality_id,
+       '' equipment_desc,
+       count(distinct a.studyinfo_id) as StudyItem_Number,
+       sum(decode(d.report_ispositive, 1, 0, 1)) report_ispositive， sum((select sum(StudyItem_Price)
+                                                                           from AIS_StudyITEMInfo e
+                                                                          where e.studyinfo_id =
+                                                                                a.studyinfo_id)) StudyItem_Price,
+       to_char(round(sum(decode(d.report_ispositive, 1, 0, 1)) /
+                     count(distinct a.studyinfo_id) * 100,
+                     1)) || '%' zb
+  from AIS_StudyInfo a, aisc_equipment c, ais_studyreport d
+ where a.equipment_id = c.equipment_id
+   and a.studyinfo_id = d.studyinfo_id
+   and a.studystatus_code not in ('Cancel')
+ group by a.loc_id,
+          a.org_id,
+          to_char(a.Study_startTime, 'yyyy-mm-dd'),
+          c.modality_id
+</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="C_STUDY_DATETIME" maxlength="10" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">C_STUDY_DATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MODALITY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EQUIPMENT_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_NUMBER" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STUDYITEM_NUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ISPOSITIVE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">REPORT_ISPOSITIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_PRICE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STUDYITEM_PRICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ZB" maxlength="41" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ZB</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

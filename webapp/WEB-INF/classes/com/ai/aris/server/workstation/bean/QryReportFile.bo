@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryReportFile" mainattr="REPORT_ID">
+    <mapingenty type="query">select c.studyinfo_id,
+       c.file_path,
+      c.file_id,
+       d.report_id,
+       b.server_id,
+       b.server_name,
+       b.server_ip,
+       b.server_port,
+       b.server_type,
+       b.server_user,
+       b.server_password,
+       b.server_enabled,
+       a.medium_path,
+       a.medium_isfull,
+       a.medium_isonline,
+       a.medium_size,
+       a.medium_reminesize,
+       a.medium_enabled,
+       a.medium_type,
+       a.medium_id,
+       d.status
+  from ais_filesinfo c, AISC_MediumInfo a, AISC_SeverInfo b,AIS_ReportFiles d
+ where c.mi_id = a.medium_id
+   and a.server_id = b.server_id  
+   and c.file_id = d.file_id</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_PATH" maxlength="128" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FILE_PATH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">FILE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">REPORT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SERVER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_NAME" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SERVER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_IP" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SERVER_IP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_PORT" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SERVER_PORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_TYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SERVER_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_USER" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SERVER_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_PASSWORD" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SERVER_PASSWORD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_ENABLED" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SERVER_ENABLED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_PATH" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MEDIUM_PATH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ISFULL" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_ISFULL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ISONLINE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_ISONLINE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_SIZE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_SIZE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_REMINESIZE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_REMINESIZE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ENABLED" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_ENABLED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_TYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATUS" maxlength="2" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STATUS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,40 @@
+@charset "gb2312";
+/* CSS Document */
+
+.w1600_h900{ width:1600px; height:900px; overflow:hidden;} /*宽1600高900*/
+.w400_h300{ width:397px; height:300px; overflow:hidden;} /*宽400高300*/  
+.w800_h300{ width:800px; height:300px; overflow:hidden;} /*宽800高300*/
+.w1200_h300{ width:1200px; height:300px; overflow:hidden;} /*宽1200高300*/
+.w1600_h300{ width:1600px; height:300px; overflow:hidden;} /*宽1600高300*/
+.w400_h600{ width:400px; height:600px; overflow:hidden;} /*宽400高600*/
+.w800_h600{ width:800px; height:600px; overflow:hidden;} /*宽800高600*/
+.w1200_h600{ width:1200px; height:600px; overflow:hidden;} /*宽1200高600*/
+.w1600_h600{ width:1200px; height:600px; overflow:hidden;} /*宽1600高600*/
+
+
+.bigscreen{  color:#fff;  }
+.bigscreen h1{color:#93d14e; height:50px; line-height:50px; font-size:2em; text-indent:10px; text-align:center; border-bottom:2px solid #484848; }
+.bigscreen h1 span{ color:#ddd; font-size:0.8em; margin-left:20px;}
+.bigscreen  .listTable{ margin: 0 auto; width:100%; border-collapse: separate; border-left: 1px solid #544c4c; border-top: 1px solid #544c4c;overflow-x: auto; clear:both;   }
+
+.bigscreen .q_r_list .listTable th{  height: 18px;padding: 10px 5px;text-align: center; background:#3b3737; color:#e56c0a; font-weight:500; border-bottom: 1px solid #544c4c; border-right: 1px solid #544c4c; font-size:1.4em; }
+.bigscreen .q_r_list .listTable a{ color:#a7a7a7;}
+.bigscreen .q_r_list .listTable td{border-bottom: 1px solid #544c4c; border-right: 1px solid #544c4c; font-size:14px; line-height: 15px; padding: 10px 3px; vertical-align: top; color:#c1c1c1;text-align: center;}
+.bigscreen .q_r_list .listTable th.l{text-align: left;}
+.bigscreen .q_r_list .listTable td.l{text-align: left;}
+.bigscreen .q_r_list .listTable th.c{text-align: center;}
+.bigscreen .q_r_list .listTable th.r{text-align: right;}
+.bigscreen .q_r_list .listTable strong{ color:#f00;}
+.bigscreen .q_r_list .listTable button{ background:#ea8420; margin-right:5px; padding:8px 20px; color:#fff; font-size:16px; border-radius:3px;  display:inline-block; border:none; cursor:pointer; outline:none; }
+.bigscreen .q_r_list .listTable button:hover{ background:#e39c57;}
+.bigscreen .q_r_list .listTable td.n_b_b{ border-bottom:none;}
+.bigscreen .q_r_list .listTable th.n_b_b{ border-bottom:none;}
+
+
+
+
+
+
+
+
+

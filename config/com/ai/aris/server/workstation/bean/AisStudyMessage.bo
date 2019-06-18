@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisStudyMessage" mainattr="MESSAGE_ID">
+    <mapingenty type="table">AIS_STUDYMESSAGE</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="MESSAGE_ID" maxlength="19" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">MESSAGE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="19" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATUS_CODE" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STATUS_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_TYPE" maxlength="6" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDY_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MESSAGE_DESTLOCID" maxlength="19" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MESSAGE_DESTLOCID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MESSAGE_DESTUSERID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MESSAGE_DESTUSERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">STUDY_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_MEMO" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDY_MEMO</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,93 @@
+/* CSS Document */
+body,html{background:#fff;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend{margin:0;padding:0;}
+body,button,input,select,textarea{font: 12px/1.5 arial,"Microsoft Yahei","榛戜綋","Hiragino Sans GB",sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style:none;}
+a{ color: #666; text-decoration: none; }
+a:hover { color: #f60;  }
+.wrap100 { width: 100%; margin: 0 auto;  }
+.wrap { width: 1000px; margin: 0 auto;   }
+.wrap2 { width: 1200px; margin: 0 auto;   }
+
+img { border:0;}
+.fl { float:left;}
+.fr { float:right;}
+.cl{ clear:both;}
+.t-icon1{ background-image: url("../../images/20150716/t-icon1.png") ; background-position:0 7px; background-repeat: no-repeat; background-size:15px 15px; display: block; padding: 0 10px; height: 25px; float: left; margin-right: 5px;}
+.t-icon2{ background-image: url("../../images/20150716/t-icon2.png") ;background-position:0 7px; background-repeat: no-repeat; background-size:15px 15px;  display: block; padding: 0 10px; height: 25px; float: left; margin-right: 5px;}
+.t-icon3{ background-image: url("../../images/20150716/t-icon3.png") ; background-position:0 7px; background-repeat: no-repeat; background-size:15px 15px; display: block; padding: 0 10px; height: 25px; float: left; margin-right: 5px;}
+.t-icon4{ background-image: url("../../images/20150716/t-icon4.png") ; background-position:0 7px; background-repeat: no-repeat; background-size:15px 15px; display: block; padding: 0 10px; height: 25px;float: left; margin-right: 5px;}
+.t-icon5{ background-image: url("../../images/home-icon1.png")  ; background-position:0 7px; background-repeat: no-repeat; background-size:15px 15px; display: block; padding: 0 10px; height: 25px; float: left; margin-right: 5px;}
+.t-icon6{ background-image: url("../../images/page_icon_warning0.png")  ;background-position:0 7px; background-repeat: no-repeat; background-size:15px 15px;  display: block; padding: 0 10px; height: 25px; float: left; margin-right: 5px;}
+.t-icon7{ background-image: url("../../images/page_icon_integral.png")  ;background-position:0 7px; background-repeat: no-repeat; background-size:15px 15px;  display: block; padding: 0 10px; height: 25px;float: left; margin-right: 5px;}
+.t-icon8{ background-image: url("../../images/20150716/t-icon8.png"); background-position:0 7px; background-repeat: no-repeat; background-size:15px 15px; display: block; padding: 0 10px; height: 25px;float: left; margin-right: 5px;}
+
+
+.topBg{ background: url("../images/topBg.jpg") no-repeat top left #fdf9e7; position: relative; height:35px;}
+.topBg .logo{ position: absolute; left:20px; top:-10px;}
+.topBg .topMenu{ position: absolute; right: 5px; top:0; height: 30px; line-height: 30px;}
+.topBg .topMenu li{ float: left; margin-right: 10px;}
+.topBg .topMenu a{font-size:14px;}
+.topBg .topMenu a strong{color: #f00; font-size: 16px;}
+
+.systemSwitch{ padding:8px 8px 15px 15px; border:1px solid #ddd; position:absolute; top:30px;right:5px;background:#fff;border-radius:4px;z-index:10}
+.topMenu .systemSwitch li{ line-heihgt:24px; height:22px; float:none;cursor:pointer}
+
+.main_menu{ background: #db3c3c; height: 40px; }
+.main_menu ul{ width: 95%; margin: 0 auto;}
+.main_menu li{float: left;  margin-right: 15px;}
+.main_menu li a{ margin-top:2px; display: block; height: 38px; padding:0 10px;  font-size: 14px; color:#fff; border-radius: 5px 5px 0 0; overflow: hidden; line-height: 35px;}
+.main_menu li a:hover{ background: #e05959;  }
+.main_menu li a.current{ background: #e8e9ee; color: #000;}
+
+
+
+
+.l-menu{background: url("../../images/20150716/leftBg.jpg") repeat-y; width: 160px;}
+.l-menu ul{width:90%; margin: 0 auto; padding:10px 0;}
+.l-menu ul li{border-top:1px solid #fcfcfc;border-bottom:1px solid #e5e5e5; line-height: 50px;}
+.l-menu ul li img{ float: left; margin-top:10px; margin-right: 5px; margin-left: 5px; width锛�0px; height: 20px;}
+.l-menu ul li a{ font-size: 12px; display: block;}
+.layer-left li dl a{ font-size:15px;}
+.layer-left li dl dt{text-indent:15px; height:30px; line-height:30px;border-bottom:1px solid #dbdbdb; width:100%;  }
+.layer-left li dl dt.current{ background: #fff;}
+.layer-left li dl dd{text-indent:25px; height:30px; line-height:30px; }
+.l-marking{ display:inline-block; background-image: url("../../images/20150716/icon1.png"); background-repeat: no-repeat; background-position: 0 0; width: 15px; height: 10px;}
+.l-marking1{ display:inline-block; float:right; background-image: url("../../images/20150716/icon2.png"); background-repeat: no-repeat; background-position: 0 0; margin-top:10px; width: 15px; height: 10px;}
+.l-marking2{ display:inline-block; float:right; background-image: url("../../images/20150716/icon3.png"); background-repeat: no-repeat; background-position: 0 0; margin-top:10px; width: 15px; height: 10px;}
+
+.l-menu ul  div li a{ font-size: 12px; display: block;}
+.l-menu ul li a:hover,.l-menu ul li a.current{ background: #fff;}
+.l-menu ul li.no-t-b{ border-top:none;}
+
+
+
+
+/*锟斤拷锟斤拷锟斤拷录*/
+.notice-float{ margin:0 auto; border-radius:5px; -webkit-border-radius:5px; overflow:hidden;  background:#fff; width:300px;  position:fixed;right:0;bottom: 0; border: 1px solid #ddd;}
+.floatTitleBg{  height:32px; line-height:32px; color:#fff; text-indent:10px;  }
+.green{background:url(../images/titleBg.png) repeat-x;}
+.orange222{ background:url(../images/titleBg.png) repeat-x 0 -32px;}
+.floatTitleBg h2{ font-size:16px; }
+.floatTitleBg .closemessage a{ margin-right:5px; font-size:18px; color:#fff; text-decoration:none; padding:5px;}
+.floatContent{ margin:20px auto; width:95%; font-size:14px; color:#444; line-height:200%; }
+.floatContent h3{ text-align:center; font-size:18px; color:#f00;}
+.floatContent h4{ color:#f60; font-size:16px; text-align:center;}
+.floatContent h5{ color:#f60; font-size:16px; text-align:center; font-weight:500;}
+.floatContent a{ color:#f60; font-size:16px; text-align:center; font-weight:500;}
+.floatContent h6{ color:#999; font-size:12px; font-weight:500; }
+
+.floatContent strong{ color:#f60;} 
+.floatContent a:hover{ color:#f60;}
+.floatContent .button{ margin-top:20px; text-align:center;}
+.floatContent .button button{ margin-right:10px;}
+.floatContent .button .loginBtn{ background:#e87350; border: 0 none;color: #FFFFFF;cursor: pointer;font-size: 12px;font-weight: 500; height: 34px;line-height: 25px;width: 97px; border-radius:5px; -webkit-border-radius:5px;}
+.floatContent .button .loginBtn:hover{ background:#f7aa06;}
+
+
+
+
+
+
+

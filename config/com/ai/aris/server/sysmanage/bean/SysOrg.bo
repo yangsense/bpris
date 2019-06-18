@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="dbsource" name="SysOrg" mainattr="ORG_ID">
+    <mapingenty type="table">SYS_ORG</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="PK" remark="机构编号" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PARENT_ORG_ID" maxlength="32" datatype="String" type="COL" remark="上级机构编号" isDict="false">
+        <mapingcol datatype="VARCHAR2">PARENT_ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL" remark="机构名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_CODE" maxlength="32" datatype="String" type="COL" remark="机构代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="1" datatype="String" type="COL" remark="状态" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="500" datatype="String" type="COL" remark="备注" isDict="false">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_TYPE" maxlength="1" datatype="String" type="COL" remark="机构类型" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_SHORT" maxlength="200" datatype="String" type="COL" remark="机构简称" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_SHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_INTRODUCT" maxlength="500" datatype="String" type="COL" remark="机构简介" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_INTRODUCT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PROVINCE_CODE" maxlength="32" datatype="String" type="COL" remark="所在省份编码【字典】GB/T2260
+（item_level=1）
+" isDict="false">
+        <mapingcol datatype="VARCHAR2">PROVINCE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_CODE" maxlength="32" datatype="String" type="COL" remark="所在城市编码【字典】GB/T2260
+（item_level=2）
+" isDict="false">
+        <mapingcol datatype="VARCHAR2">CITY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DISTRICT_CODE" maxlength="50" datatype="String" type="COL" remark="所在区/县编码【字典】GB/T2260
+（item_level=3）
+" isDict="false">
+        <mapingcol datatype="VARCHAR2">DISTRICT_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STREET_CODE" maxlength="50" datatype="String" type="COL" remark="镇/街道编码【字典】GB/T2260
+（item_level=4）
+" isDict="false">
+        <mapingcol datatype="VARCHAR2">STREET_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VILLAGE_CODE" maxlength="50" datatype="String" type="COL" remark="村/社区编码【字典】GB/T2260
+（item_level=5）
+" isDict="false">
+        <mapingcol datatype="VARCHAR2">VILLAGE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPDATE_USER_ID" maxlength="32" datatype="String" type="COL" remark="数据最后一次更新用户ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">UPDATE_USER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPDATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="数据最后一次更新时间" isDict="false">
+        <mapingcol datatype="DATE">UPDATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER_ID" maxlength="32" datatype="String" type="COL" remark="数据创建用户ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">CREATE_USER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_ORG_CODE" maxlength="32" datatype="String" type="COL" remark="数据创建单位代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">CREATE_ORG_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="数据创建时间" isDict="false">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="WEB_URL" maxlength="200" datatype="String" type="COL" remark="网址" isDict="false">
+        <mapingcol datatype="VARCHAR2">WEB_URL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EMAIL" maxlength="200" datatype="String" type="COL" remark="邮箱" isDict="false">
+        <mapingcol datatype="VARCHAR2">EMAIL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="POSTCODE" maxlength="6" datatype="String" type="COL" remark="邮编" isDict="false">
+        <mapingcol datatype="VARCHAR2">POSTCODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FAX_NO" maxlength="20" datatype="String" type="COL" remark="传真号" isDict="false">
+        <mapingcol datatype="VARCHAR2">FAX_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ADDR" maxlength="500" datatype="String" type="COL" remark="机构联系地址" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ADDR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTACT_TEL" maxlength="20" datatype="String" type="COL" remark="机构联系人电话" isDict="false">
+        <mapingcol datatype="VARCHAR2">CONTACT_TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTACT_NAME" maxlength="100" datatype="String" type="COL" remark="机构联系人" isDict="false">
+        <mapingcol datatype="VARCHAR2">CONTACT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LAW_PERSON_TEL" maxlength="20" datatype="String" type="COL" remark="机构负责人电话" isDict="false">
+        <mapingcol datatype="VARCHAR2">LAW_PERSON_TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LAW_PERSON_NAME" maxlength="100" datatype="String" type="COL" remark="机构负责人" isDict="false">
+        <mapingcol datatype="VARCHAR2">LAW_PERSON_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ECONOMIC_TYPE_CODE" maxlength="2" datatype="String" type="COL" remark="经济类型代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">ECONOMIC_TYPE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MANAGEMENT_CODE" maxlength="2" datatype="String" type="COL" remark="机构分类管理代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">MANAGEMENT_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_TYPE_FIRST" maxlength="5" datatype="String" type="COL" remark="机构类别（一级）" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_TYPE_FIRST</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_TYPE_THIRD" maxlength="5" datatype="String" type="COL" remark="机构类别（三级）" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_TYPE_THIRD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_TYPE_SECOND" maxlength="5" datatype="String" type="COL" remark="机构类别（二级）" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_TYPE_SECOND</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_CLASS_GRADE" maxlength="1" datatype="String" type="COL" remark="医院等级（等）" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_CLASS_GRADE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORGANIZER_TYPE_CODE" maxlength="1" datatype="String" type="COL" remark="设置/主办单位类别" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORGANIZER_TYPE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_HEAD_TELEPHONE" maxlength="15" datatype="String" type="COL" remark="法定代表人(负责人)联系电话" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_HEAD_TELEPHONE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_HEAD" maxlength="30" datatype="String" type="COL" remark="法定代表人(负责人)" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_HEAD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BRANCH_MARK" maxlength="1" datatype="String" type="COL" remark="是否分支机构" isDict="false">
+        <mapingcol datatype="VARCHAR2">BRANCH_MARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SETUP_TIME" maxlength="32" datatype="String" type="COL" remark="开业/成立时间（年份）" isDict="false">
+        <mapingcol datatype="VARCHAR2">SETUP_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUBORDINATE_DIVISION_CODE" maxlength="15" datatype="String" type="COL" remark="政府办机构隶属行政区划代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">SUBORDINATE_DIVISION_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUBORDINATE_RELATIONSHIP_CODE" maxlength="1" datatype="String" type="COL" remark="政府办机构隶属关系代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">SUBORDINATE_RELATIONSHIP_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_CLASS_LEVEL" maxlength="1" datatype="String" type="COL" remark="医院等级（级）" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_CLASS_LEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_LEVEL" maxlength="20" datatype="Long" type="COL" remark="组织机构层级" isDict="false">
+        <mapingcol datatype="NUMBER">ORG_LEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="XNH_MARK" maxlength="1" datatype="String" type="COL" remark="新农合定点医疗机构标志【字典】CV99.YL.ShiFou" isDict="false">
+        <mapingcol datatype="VARCHAR2">XNH_MARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="YB_MARK" maxlength="1" datatype="String" type="COL" remark="医保定点医疗机构标志【字典】CV99.YL.ShiFou" isDict="false">
+        <mapingcol datatype="VARCHAR2">YB_MARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DUNS" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">DUNS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="XNH_DUNS" maxlength="32" datatype="String" type="COL" remark="新农和机构码" isDict="false">
+        <mapingcol datatype="VARCHAR2">XNH_DUNS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HASPACS" maxlength="1" datatype="Integer" type="COL" remark="是否上线pacs" isDict="false">
+        <mapingcol datatype="NUMBER">HASPACS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>
