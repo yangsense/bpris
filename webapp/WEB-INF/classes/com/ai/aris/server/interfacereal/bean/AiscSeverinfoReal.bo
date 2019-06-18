@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscSeverinfoReal" mainattr="SERVER_REAL_ID">
+    <mapingenty type="table">AISC_SEVERINFO_REAL</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="SERVER_REAL_ID" maxlength="8" datatype="Long" type="PK" remark="接口科室信息关系表ID 主键" isDict="false">
+        <mapingcol datatype="NUMBER">SERVER_REAL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_ID" maxlength="8" datatype="Long" type="COL" remark="科室ID" isDict="false">
+        <mapingcol datatype="NUMBER">SERVER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OLD_SERVER_ID" maxlength="8" datatype="Long" type="COL" remark="目标数据源科室ID" isDict="false">
+        <mapingcol datatype="NUMBER">OLD_SERVER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" remark="机构ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间" isDict="false">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

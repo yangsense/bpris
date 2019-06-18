@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisStudyHistoryInfo" mainattr="STUDYHISTORYINFO_ID">
+    <mapingenty type="table">AIS_STUDYHISTORYINFO</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STUDYHISTORYINFO_ID" maxlength="19" datatype="Long" type="PK" remark="ID">
+        <mapingcol datatype="NUMBER">STUDYHISTORYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="19" datatype="Long" type="COL" remark="检查申请ID">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYSTATUS_CODE" maxlength="32" datatype="String" type="COL" remark="检查状态">
+        <mapingcol datatype="VARCHAR2">STUDYSTATUS_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_USERID" maxlength="32" datatype="String" type="COL" remark="操作人">
+        <mapingcol datatype="VARCHAR2">STUDY_USERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_DATE" maxlength="20" datatype="DateTime" type="COL" remark="操作日期">
+        <mapingcol datatype="DATE">STUDY_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_MEMO" maxlength="64" datatype="String" type="COL" remark="备注信息">
+        <mapingcol datatype="VARCHAR2">STUDY_MEMO</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

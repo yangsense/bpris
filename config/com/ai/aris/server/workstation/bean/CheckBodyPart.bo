@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="CheckBodyPart" mainattr="BODYPART2_ID">
+    <mapingenty type="query">select  a.*,b.bodypart_desc
+  from aisc_bodypart2item a, aisc_bodypart b
+ where a.bodypart_code = b.bodypart_code</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="BODYPART2_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">BODYPART2_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ITEMMAST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_CODE" maxlength="8" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BODYPART_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_DESC" maxlength="18" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BODYPART_DESC</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

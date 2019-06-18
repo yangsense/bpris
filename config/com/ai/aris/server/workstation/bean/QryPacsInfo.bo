@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryPacsInfo" mainattr="PATIENTID">
+    <mapingenty type="query">select d.patientkey,d.PatientId,d.PatientName,c.AccessionNumber,c.receptiondate,c.ModalitiesInStudy from Study c,Patient d where c.patientkey=d.patientkey</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PATIENTKEY" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">PATIENTKEY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENTID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENTID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENTNAME" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENTNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ACCESSIONNUMBER" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ACCESSIONNUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECEPTIONDATE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">RECEPTIONDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITIESINSTUDY" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">MODALITIESINSTUDY</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

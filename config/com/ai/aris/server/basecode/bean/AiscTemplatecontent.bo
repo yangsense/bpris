@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscTemplatecontent" mainattr="TEMPLATECONTENT_ID">
+    <mapingenty type="table">AISC_TEMPLATECONTENT</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="TEMPLATECONTENT_ID" maxlength="8" datatype="Long" type="PK" remark="主键">
+        <mapingcol datatype="NUMBER">TEMPLATECONTENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATEDIR_ID" maxlength="8" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TEMPLATEDIR_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATECAT_ID" maxlength="8" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TEMPLATECAT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATE_NAME" maxlength="64" datatype="String" type="COL" remark="模板名称">
+        <mapingcol datatype="VARCHAR2">TEMPLATE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATE_METHOD" maxlength="256" datatype="String" type="COL" remark="检查方法">
+        <mapingcol datatype="VARCHAR2">TEMPLATE_METHOD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATE_EXAM" maxlength="20" type="COL" remark="检查所见">
+        <mapingcol datatype="CLOB">TEMPLATE_EXAM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATE_RESULT" maxlength="20" type="COL" remark="诊断结果">
+        <mapingcol datatype="CLOB">TEMPLATE_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEMPLATE_FQ" maxlength="8" datatype="Long" type="COL" remark="使用频率">
+        <mapingcol datatype="NUMBER">TEMPLATE_FQ</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisModalityworklist" mainattr="WMLID">
+    <mapingenty type="table">AIS_MODALITYWORKLIST</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="WMLID" maxlength="19" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">WMLID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ACCESSION_NUMBER" maxlength="32" datatype="String" type="COL" remark="检查号">
+        <mapingcol datatype="VARCHAR2">ACCESSION_NUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" remark="机构ID">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INSTITUTION_NAME" maxlength="32" datatype="String" type="COL" remark="机构名称">
+        <mapingcol datatype="VARCHAR2">INSTITUTION_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REFERRING_PHYSICIAN_NAME" maxlength="64" datatype="String" type="COL" remark="主治医生">
+        <mapingcol datatype="VARCHAR2">REFERRING_PHYSICIAN_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="32" datatype="String" type="COL" remark="病人姓名">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ID" maxlength="32" datatype="String" type="COL" remark="登记ID">
+        <mapingcol datatype="VARCHAR2">PATIENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_BIRTHDATE" maxlength="16" datatype="String" type="COL" remark="生日">
+        <mapingcol datatype="VARCHAR2">PATIENT_BIRTHDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_SEX" maxlength="4" datatype="String" type="COL" remark="性别">
+        <mapingcol datatype="VARCHAR2">PATIENT_SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_SIZE" maxlength="8" datatype="String" type="COL" remark="患者身高">
+        <mapingcol datatype="VARCHAR2">PATIENT_SIZE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_WEIGTH" maxlength="8" datatype="String" type="COL" remark="体重">
+        <mapingcol datatype="VARCHAR2">PATIENT_WEIGTH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ADDRESS" maxlength="64" datatype="String" type="COL" remark="地址">
+        <mapingcol datatype="VARCHAR2">PATIENT_ADDRESS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ALERTS" maxlength="64" datatype="String" type="COL" remark="用药警示">
+        <mapingcol datatype="VARCHAR2">PATIENT_ALERTS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ALLERGIES" maxlength="64" datatype="String" type="COL" remark="过敏药物">
+        <mapingcol datatype="VARCHAR2">ALLERGIES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_HISTORY" maxlength="1024" datatype="String" type="COL" remark="病史">
+        <mapingcol datatype="VARCHAR2">PATIENT_HISTORY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PREGNANCY_STATUS" maxlength="1" datatype="Integer" type="COL" remark="怀孕状态">
+        <mapingcol datatype="NUMBER">PREGNANCY_STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_INSTANCE_UID" maxlength="128" datatype="String" type="COL" remark="STUDY UID">
+        <mapingcol datatype="VARCHAR2">STUDY_INSTANCE_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUESTING_PHYSICIAN" maxlength="64" datatype="String" type="COL" remark="申请医生">
+        <mapingcol datatype="VARCHAR2">REQUESTING_PHYSICIAN</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUESTING_SERVICE" maxlength="64" datatype="String" type="COL" remark="申请服务">
+        <mapingcol datatype="VARCHAR2">REQUESTING_SERVICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ADMISSION_ID" maxlength="64" datatype="String" type="COL" remark="就诊ID">
+        <mapingcol datatype="VARCHAR2">ADMISSION_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SPECIAL_NEEDS" maxlength="64" datatype="String" type="COL" remark="特殊需求">
+        <mapingcol datatype="VARCHAR2">SPECIAL_NEEDS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CURRENT_PATIENT_LOCATION" maxlength="64" datatype="String" type="COL" remark="当前患者位置">
+        <mapingcol datatype="VARCHAR2">CURRENT_PATIENT_LOCATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_STATE" maxlength="64" datatype="String" type="COL" remark="患者状态">
+        <mapingcol datatype="VARCHAR2">PATIENT_STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY" maxlength="16" datatype="String" type="COL" remark="检查类型">
+        <mapingcol datatype="VARCHAR2">MODALITY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUESTED_CONTRAST_AGENT" maxlength="64" datatype="String" type="COL" remark="请求的造影剂">
+        <mapingcol datatype="VARCHAR2">REQUESTED_CONTRAST_AGENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SCHEDULED_STATION_AE_TITLE" maxlength="16" datatype="String" type="COL" remark="设备AE Title">
+        <mapingcol datatype="VARCHAR2">SCHEDULED_STATION_AE_TITLE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SCHEDULED_PROCEDURE_STEP_DATE" maxlength="20" datatype="DateTime" type="COL" remark="预约开始执行的日期">
+        <mapingcol datatype="DATE">SCHEDULED_PROCEDURE_STEP_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SCHEDULED_PERFORMING_PHYSICAL" maxlength="16" datatype="String" type="COL" remark="预约技师">
+        <mapingcol datatype="VARCHAR2">SCHEDULED_PERFORMING_PHYSICAL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SCHEDULED_STATION_NAME" maxlength="64" datatype="String" type="COL" remark="工作站名称">
+        <mapingcol datatype="VARCHAR2">SCHEDULED_STATION_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SCHEDULED_PROCEDURE_LOCATION" maxlength="64" datatype="String" type="COL" remark="计划过程步骤位置">
+        <mapingcol datatype="VARCHAR2">SCHEDULED_PROCEDURE_LOCATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PREMEDICATION" maxlength="64" datatype="String" type="COL" remark="术前用药">
+        <mapingcol datatype="VARCHAR2">PREMEDICATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUESTED_PROCEDURE_ID" maxlength="16" datatype="String" type="COL" remark="申请序号">
+        <mapingcol datatype="VARCHAR2">REQUESTED_PROCEDURE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUESTED_PROCEDURE_PRIORI" maxlength="64" datatype="String" type="COL" remark="申请优先级别">
+        <mapingcol datatype="VARCHAR2">REQUESTED_PROCEDURE_PRIORI</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_TRANSPORT_ARRANGEM" maxlength="64" datatype="String" type="COL" remark="运送病人安排">
+        <mapingcol datatype="VARCHAR2">PATIENT_TRANSPORT_ARRANGEM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUESTED_PROCEDURE_LOCATION" maxlength="64" datatype="String" type="COL" remark="申请位置（申请科室）">
+        <mapingcol datatype="VARCHAR2">REQUESTED_PROCEDURE_LOCATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONFIDENTIALITY_CODE" maxlength="64" datatype="String" type="COL" remark="保密守则">
+        <mapingcol datatype="VARCHAR2">CONFIDENTIALITY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONFIDENTIALITY_CONSTRAINT" maxlength="64" datatype="String" type="COL" remark="患者资料保密描述">
+        <mapingcol datatype="VARCHAR2">CONFIDENTIALITY_CONSTRAINT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_AGE" maxlength="8" datatype="String" type="COL" remark="患者年龄">
+        <mapingcol datatype="VARCHAR2">PATIENT_AGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUESTED_PROCEDUREDESCRIPTION" maxlength="64" datatype="String" type="COL" remark="检查描述">
+        <mapingcol datatype="VARCHAR2">REQUESTED_PROCEDUREDESCRIPTION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SCHEDULED_PROCEDURE_STEP_ID" maxlength="64" datatype="String" type="COL" remark="预约ID号">
+        <mapingcol datatype="VARCHAR2">SCHEDULED_PROCEDURE_STEP_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SCHEDULED_PROCEDUREDESCRIPTION" maxlength="64" datatype="String" type="COL" remark="检查描述">
+        <mapingcol datatype="VARCHAR2">SCHEDULED_PROCEDUREDESCRIPTION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATUS" maxlength="2" datatype="String" type="COL" remark="0 正常 1 删除">
+        <mapingcol datatype="VARCHAR2">STATUS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

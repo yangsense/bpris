@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QueryDataBase" mainattr="SOURCE_ID">
+    <mapingenty type="query">select a.*,b.city_code,(select item_name from  sys_dictitem where  dict_name='GB/T2260' and item_no=b.city_code) as city_desc,b.district_Code as county_code,(select item_name from  sys_dictitem where  dict_name='GB/T2260' and item_no=b.district_Code) as county_desc,b.haspacs  from  AISC_HIS_DATASOURCE a,sys_org b where  a.org_id=b.org_id
+</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="SOURCE_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">SOURCE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOURCE_URL" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SOURCE_URL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOURCE_USER" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SOURCE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOURCE_PASSWORD" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SOURCE_PASSWORD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATUS" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_TYPECODE" maxlength="24" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_TYPECODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_CODE" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CITY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_DESC" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CITY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_CODE" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_DESC" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HASPACS" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">HASPACS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

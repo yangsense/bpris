@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+body,html{background:#fff;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend{margin:0;padding:0;}
+body,button,input,select,textarea{font: 12px/1.5 arial, "宋体","Microsoft Yahei","Hiragino Sans GB",sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style:none;}
+a{ color: #454545; text-decoration: none; }
+a:hover { color: #f60; text-decoration: underline;  }
+img { border:0;}
+#clear { clear: both;}
+
+#body{}
+#container{ border:#06F solid 1px; width:98%; margin: 0px auto; }
+.nav{ background:url(../images/panel_title.png) repeat-x top; height:32px;}
+.nav dl{line-height:32px;}
+.nav dl dt{ float:left; margin-left:20px; }
+.nav dl dd{ float:right;margin-right:20px;}
+.main{ width:97%; margin: 0px auto;  }
+.main ul{ margin-top:20px;}
+.main ul li{ float:left; border:#CCC solid 1px; width:300px; height:160px;margin:10px;}
+.main ul li img{ width:138px; height:138px; margin-top:10px;}
+.main ul li dl{ line-height:35px; }
+.main ul li dl dt{ float:left;}
+.main ul li dl dd{ float:right; width:150px;}
+.main ul li dl dd span{ font-size:18px; color:#F00; font-weight:600px;}
+.main ul li dl dd font{ text-decoration:line-through; color:#999;}
+
+
+
+.list02{background:url(../images/bg1.jpg) repeat-x; line-height:37px; height:37px; width:100%; font-size:14px;}
+.list02 dl{ }
+.list02 dl dt{ float:left; width:50%; text-align:center; }
+.list02 dl dd{ float:right;width:50%; text-align:center;}
+.tabBg{ background:url(../images/fhbg.gif) repeat-x; height:24px; line-height:24px;}
+.bor{ border-right:#CCC solid 1px;}
+.bor_b{ border-bottom:#CCC solid 1px; height:24px;}
+
+
+
+.selectAdv{ background:#ff8433; color:#fff;}
+
+
+
+

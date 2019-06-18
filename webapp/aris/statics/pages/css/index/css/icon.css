@@ -1,0 +1,25 @@
+
+/*登录页图标*/
+.login_icon1{width:22px; height:22px; background:url(../img/login-user-icon01.png) no-repeat; display:block;margin-top:5px;}
+.login_icon2{width:22px; height:22px; background:url(../img/login-pwd-icon01.png) no-repeat;  display:block;margin-top:5px;}
+.login_icon{ background:url(../images/l-icon2.png) no-repeat; width:20px; height:16px; display:block; margin:6px 0 0 20px; float:left;}
+.reset_icon{ background:url(../images/l-icon1.png) no-repeat; width:21px; height:21px; display:block; margin:3px 0 0 20px; float:left;}
+.prompt_icon{ background:url(../images/marking1.gif) no-repeat; width:18px; height:17px; display:block; float:left; margin-top:6px; margin-right:10px; }
+
+
+
+
+
+.left-arrow-right{ background-image:url(../images/marking3.png); background-repeat: no-repeat; background-position: 18px 10px; display: block; }
+.left-arrow-bottom{ background-image:url(../images/marking1.png); background-repeat: no-repeat; background-position: 10px 15px; display: block; }
+
+
+
+
+
+
+
+
+
+
+

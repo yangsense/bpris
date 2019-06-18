@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="dbsource" name="QueryOrgTree" mainattr="ORG_ID">
+    <mapingenty type="query">select t.*,
+       (select count(1) from SYS_ORG a where a.parent_org_id = t.org_id) children
+  from SYS_ORG t</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PARENT_ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PARENT_ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_CODE" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_TYPE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_SHORT" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_SHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_INTRODUCT" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_INTRODUCT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PROVINCE_CODE" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PROVINCE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_CODE" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CITY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DISTRICT_CODE" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DISTRICT_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STREET_CODE" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STREET_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VILLAGE_CODE" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">VILLAGE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPDATE_USER_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">UPDATE_USER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPDATE_TIME" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">UPDATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_ORG_CODE" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_ORG_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="WEB_URL" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">WEB_URL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EMAIL" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EMAIL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="POSTCODE" maxlength="6" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">POSTCODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FAX_NO" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FAX_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ADDR" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ADDR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTACT_TEL" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONTACT_TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTACT_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONTACT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LAW_PERSON_TEL" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LAW_PERSON_TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LAW_PERSON_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LAW_PERSON_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ECONOMIC_TYPE_CODE" maxlength="2" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ECONOMIC_TYPE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MANAGEMENT_CODE" maxlength="2" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MANAGEMENT_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_TYPE_FIRST" maxlength="5" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_TYPE_FIRST</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_TYPE_THIRD" maxlength="5" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_TYPE_THIRD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_TYPE_SECOND" maxlength="5" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_TYPE_SECOND</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_CLASS_GRADE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_CLASS_GRADE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORGANIZER_TYPE_CODE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORGANIZER_TYPE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_HEAD_TELEPHONE" maxlength="15" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_HEAD_TELEPHONE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_HEAD" maxlength="30" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_HEAD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BRANCH_MARK" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BRANCH_MARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SETUP_TIME" maxlength="4" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SETUP_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUBORDINATE_DIVISION_CODE" maxlength="15" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SUBORDINATE_DIVISION_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUBORDINATE_RELATIONSHIP_CODE" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SUBORDINATE_RELATIONSHIP_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_CLASS_LEVEL" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_CLASS_LEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_LEVEL" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ORG_LEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="XNH_MARK" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">XNH_MARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="YB_MARK" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">YB_MARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DUNS" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DUNS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHILDREN" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CHILDREN</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

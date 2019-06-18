@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="WorkListCount" mainattr="STUDYINFO_ID">
+    <mapingenty type="query">select a.studyinfo_id,
+       b.patient_name,
+       a.Study_appdate,
+       a.loc_id,
+       a.patient_age,
+       b.patient_sex,
+       a.equipment_id,
+       (select equipment_desc from aisc_equipment where equipment_id=a.equipment_id) equipment_desc,
+       a.patienttype_code,
+       decode(a.patienttype_code,
+              'INP',
+              patient_inpatientid,
+              'OP',
+              a.patient_outpatientid) patient_inpatientid,
+       a.study_applocid,
+       
+       a.org_id,
+       a.Study_ItemDesc,
+       (select loc_desc from AISC_Loc al where al.loc_id = a.Study_AppLocID) loc_desc,
+       a.study_appdoc,
+       (select careprov_name
+          from aisc_careprov ac
+         where ac.careprov_id = a.Study_AppDoc) study_AppDocname,
+       to_char(a.Study_operationTime, 'yyyy-mm-dd hh24:mi:ss') c_Study_OperationTime,
+       a.study_bedno,
+       (select wm_concat(studyitem_bodyinfo) studyitem_bodyinfo
+          from ais_studyiteminfo
+         where studyinfo_id = a.studyinfo_id) bodyItem,
+       a.study_accnumber
+  from ais_studyinfo a, ais_patientinfo b
+ where a.patient_globalid = b.patient_globalid</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_APPDATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">STUDY_APPDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_AGE" maxlength="8" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PATIENT_AGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_SEX" maxlength="8" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PATIENT_SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">EQUIPMENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EQUIPMENT_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENTTYPE_CODE" maxlength="8" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PATIENTTYPE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_INPATIENTID" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PATIENT_INPATIENTID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_APPLOCID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STUDY_APPLOCID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ITEMDESC" maxlength="128" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDY_ITEMDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_APPDOC" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDY_APPDOC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_APPDOCNAME" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDY_APPDOCNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="C_STUDY_OPERATIONTIME" maxlength="19" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">C_STUDY_OPERATIONTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_BEDNO" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDY_BEDNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYITEM" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BODYITEM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ACCNUMBER" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDY_ACCNUMBER</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

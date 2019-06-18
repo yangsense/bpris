@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="Study" mainattr="TYPE">
+    <mapingenty type="table">STUDY</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="TYPE" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PROTOCOL" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PROTOCOL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITIESINSTUDY" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">MODALITIESINSTUDY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PROCEDUREID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PROCEDUREID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RADIOLOGIST" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">RADIOLOGIST</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECEPTIONTIME" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">RECEPTIONTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECEPTIONDATE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">RECEPTIONDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYDESCRIPTION" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYDESCRIPTION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYPRIORITY" maxlength="2048" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYPRIORITY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DIAGNOSEDSTATUS" maxlength="2048" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">DIAGNOSEDSTATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VERIFIEDERROR" maxlength="2048" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">VERIFIEDERROR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VERIFIEDSTATUS" maxlength="2048" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">VERIFIEDSTATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REFERRINGDEPARTMENT" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REFERRINGDEPARTMENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REFERRINGDOCTOR" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REFERRINGDOCTOR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REFERRINGHOSPITAL" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REFERRINGHOSPITAL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ACCESSIONNUMBER" maxlength="32" datatype="String" type="COL" remark="检查号" isDict="false">
+        <mapingcol datatype="VARCHAR2">ACCESSIONNUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYTIME" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYDATE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENTKEY" maxlength="19" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">PATIENTKEY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYUID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYUID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYID" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYKEY" maxlength="19" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYKEY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INSTITUTIONID" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">INSTITUTIONID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HASRISINFO" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">HASRISINFO</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

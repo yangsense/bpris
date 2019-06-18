@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscUserPhrase" mainattr="PHRASE_ID">
+    <mapingenty type="table">AISC_USERPHRASE</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PHRASE_ID" maxlength="8" datatype="Long" type="PK" remark="用户短语ID">
+        <mapingcol datatype="NUMBER">PHRASE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_ID" maxlength="8" datatype="Long" type="COL" remark="用户ID">
+        <mapingcol datatype="NUMBER">OPERATOR_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PHRASE_CONTENT" maxlength="1024" datatype="String" type="COL" remark="短语内容">
+        <mapingcol datatype="VARCHAR2">PHRASE_CONTENT</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

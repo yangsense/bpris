@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QueryCountys" mainattr="COUNTY_CODE">
+    <mapingenty type="query">   select a.county_code, a.county_desc,a.city_code
+          from AISC_AreaInstitution a
+         where 1 = 1
+           and a.county_desc is not null
+         group by a.county_code, a.county_desc,a.city_code</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="COUNTY_CODE" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_DESC" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_CODE" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CITY_CODE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

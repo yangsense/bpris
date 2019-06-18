@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisVersionRecord" mainattr="ID">
+    <mapingenty type="table">AIS_VERSION_RECORD</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="32" datatype="String" type="COL" remark="id" isDict="false">
+        <mapingcol datatype="VARCHAR2">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VERSION_NO" maxlength="64" datatype="String" type="COL" remark="版本号" isDict="false">
+        <mapingcol datatype="VARCHAR2">VERSION_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPDATE_DATE" maxlength="20" datatype="DateTime" type="COL" remark="更新日期" isDict="false">
+        <mapingcol datatype="DATE">UPDATE_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VERSION_REMARK" maxlength="1000" datatype="String" type="COL" remark="版本备注、说明" isDict="false">
+        <mapingcol datatype="VARCHAR2">VERSION_REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VERSION_BELONG_ORGCODE" maxlength="100" datatype="String" type="COL" remark="版本所属机构编码" isDict="false">
+        <mapingcol datatype="VARCHAR2">VERSION_BELONG_ORGCODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VERSION_BELONG_ORGNAME" maxlength="100" datatype="String" type="COL" remark="版本所属机构名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">VERSION_BELONG_ORGNAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

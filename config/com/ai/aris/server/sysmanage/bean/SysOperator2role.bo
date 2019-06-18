@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="SysOperator2role" mainattr="ROLE_ID">
+    <mapingenty type="table">SYS_OPERATOR2ROLE</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ROLE_ID" maxlength="20" datatype="Long" type="PK" isDict="false">
+        <mapingcol datatype="NUMBER">ROLE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_CODE" maxlength="32" datatype="String" type="PK" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="500" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

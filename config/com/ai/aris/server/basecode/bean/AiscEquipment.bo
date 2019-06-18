@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscEquipment" mainattr="EQUIPMENT_ID">
+    <mapingenty type="table">AISC_EQUIPMENT</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="EQUIPMENT_ID" maxlength="8" datatype="Long" type="PK" remark="主键">
+        <mapingcol datatype="NUMBER">EQUIPMENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="8" datatype="Long" type="COL" remark="科室ID">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_CODE" maxlength="32" datatype="String" type="COL" remark="设备代码">
+        <mapingcol datatype="VARCHAR2">EQUIPMENT_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY_ID" maxlength="8" datatype="Long" type="COL" remark="设备大类ID">
+        <mapingcol datatype="NUMBER">MODALITY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_DESC" maxlength="32" datatype="String" type="COL" remark="设备描述">
+        <mapingcol datatype="VARCHAR2">EQUIPMENT_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_ENDESC" maxlength="64" datatype="String" type="COL" remark="设备描述（英文）">
+        <mapingcol datatype="VARCHAR2">EQUIPMENT_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_AE" maxlength="16" datatype="String" type="COL" remark="设备AE Title">
+        <mapingcol datatype="VARCHAR2">EQUIPMENT_AE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_IP" maxlength="32" datatype="String" type="COL" remark="设备IP">
+        <mapingcol datatype="VARCHAR2">EQUIPMENT_IP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_PORT" maxlength="20" datatype="Long" type="COL" remark="端口">
+        <mapingcol datatype="NUMBER">EQUIPMENT_PORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_STARTDATE" maxlength="20" datatype="DateTime" type="COL" remark="设备的开始使用时间">
+        <mapingcol datatype="DATE">EQUIPMENT_STARTDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_MANUFACTURER" maxlength="32" datatype="String" type="COL" remark="设备厂家">
+        <mapingcol datatype="VARCHAR2">EQUIPMENT_MANUFACTURER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EQUIPMENT_PHONE" maxlength="32" datatype="String" type="COL" remark="联系电话">
+        <mapingcol datatype="VARCHAR2">EQUIPMENT_PHONE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ROOM_ID" maxlength="8" datatype="Long" type="COL" remark="房间ID">
+        <mapingcol datatype="NUMBER">ROOM_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY_ENABLED" maxlength="1" datatype="Integer" type="COL" remark="是否可用">
+        <mapingcol datatype="NUMBER">MODALITY_ENABLED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY_WORKLIST" maxlength="1" datatype="Integer" type="COL" remark="支持WORKLIST
+0：不支持
+1：支持
+">
+        <mapingcol datatype="NUMBER">MODALITY_WORKLIST</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY_SUPPORTCHINESE" maxlength="1" datatype="Integer" type="COL" remark="是否支持中文
+0：不支持
+1：支持
+">
+        <mapingcol datatype="NUMBER">MODALITY_SUPPORTCHINESE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY_SUPPORTSEXAGE" maxlength="1" datatype="Integer" type="COL" remark="0：不支持
+1：支持
+是否支持姓名中带有性别和年龄">
+        <mapingcol datatype="NUMBER">MODALITY_SUPPORTSEXAGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" remark="组织机构">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_ID" maxlength="11" datatype="Long" type="COL" remark="检查项目子类ID">
+        <mapingcol datatype="NUMBER">ORDSUBCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODALITY_SUPPORTID" maxlength="1" datatype="Integer" type="COL" remark="是否支持体检">
+        <mapingcol datatype="NUMBER">MODALITY_SUPPORTID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

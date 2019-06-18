@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisFilesInfo" mainattr="STUDYINFO_ID">
+    <mapingenty type="table">AIS_FILESINFO</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="19" datatype="Long" type="COL" remark="检查信息表ID" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_ID" maxlength="19" datatype="Long" type="PK" remark="文件表ID" isDict="false">
+        <mapingcol datatype="NUMBER">FILE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_TYPE" maxlength="8" datatype="String" type="COL" remark="文件类型BMP,JPG,DCM,PDF,AVI" isDict="false">
+        <mapingcol datatype="VARCHAR2">FILE_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_PATH" maxlength="128" datatype="String" type="COL" remark="文件路径" isDict="false">
+        <mapingcol datatype="VARCHAR2">FILE_PATH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_DESC" maxlength="32" datatype="String" type="COL" remark="文件描述" isDict="false">
+        <mapingcol datatype="VARCHAR2">FILE_DESC</mapingcol>
+      </attr>
+      <attr floatlength="2" name="FILE_SIZE" maxlength="8" datatype="Float" type="COL" remark="文件大小" isDict="false">
+        <mapingcol datatype="NUMBER">FILE_SIZE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_ARCHIVE" maxlength="1" datatype="Integer" type="COL" remark="归档标志
+1:表示归档
+0: 未归档
+" isDict="false">
+        <mapingcol datatype="NUMBER">FILE_ARCHIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_PRINTED" maxlength="1" datatype="Integer" type="COL" remark="打印标志 1 打印，0 表示未打印" isDict="false">
+        <mapingcol datatype="NUMBER">FILE_PRINTED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MI_ID" maxlength="8" datatype="Long" type="COL" remark="介质ID" isDict="false">
+        <mapingcol datatype="NUMBER">MI_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

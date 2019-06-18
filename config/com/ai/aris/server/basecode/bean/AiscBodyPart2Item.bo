@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscBodyPart2Item" mainattr="ITEMMAST_ID">
+    <mapingenty type="table">AISC_BODYPART2ITEM</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="BODYPART2_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">BODYPART2_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_ID" maxlength="8" datatype="Long" type="COL" remark="检查项目ID">
+        <mapingcol datatype="NUMBER">ITEMMAST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_CODE" maxlength="8" datatype="String" type="COL" remark="部位代码">
+        <mapingcol datatype="VARCHAR2">BODYPART_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" remark="组织机构">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryLocStudyStatus" mainattr="LOC_ID">
+    <mapingenty type="query">  select b.loc_studysta_id,b.loc_id,a.loc_code,a.loc_desc,a.loc_endesc,b.study_status,b.status_name,b.org_id,(select org_name from sys_org where org_id=b.org_id) org_name from AISC_LOC_STUDYSTA b, aisc_loc a where a.loc_id = b.loc_id 
+</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="LOC_STUDYSTA_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_STUDYSTA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_CODE" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ENDESC" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_STATUS" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDY_STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATUS_NAME" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STATUS_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

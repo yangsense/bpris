@@ -1,0 +1,74 @@
+
+/* 登录页导航-底色样式 */
+/* .loginTopBg{ height:100px;background:url(../images/food_topBg.jpg) no-repeat scroll center 0 transparent;} */
+.loginTopBg{height:100px;background:transparent}
+.loginTopBg img{margin-top:23px;}
+
+/* 登录框样式 */
+/* .loginContent{ background:url(../images/loginContentBg.jpg) repeat-x top left;}*/
+
+.loginContent .leftAdver{ width:510px;}
+
+.loginContent .loginList{ /* background:rgba(255,255,255,0.15); */ width:560px; margin-top:180px; height:300px; margin-left:22%}
+.loginContent .loginList h5{height:45px; line-height: 10px; text-indent:35%; font-weight:500; font-size:2.5em; color:#fff;  }
+/* .prompt i {
+    background: url("/ecard/statics/common/images/cancel.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 17px;
+} */
+.prompt {
+    color: red;
+    font-size: 15px;
+}
+.loginList ul.prompt {
+	/* float:left; */
+    width: 90%;
+    position: relative;
+}
+
+.loginContent .loginList ul{margin-top:15px; margin-left:55px; }
+.loginContent .loginList ul li{ margin-bottom:20px; position:relative; height:50px;text-align: -webkit-match-parent;}
+.loginContent .loginList ul li span{ position:absolute; z-index:2; top:10px; left:40px; font-size:16px; color:#999;}
+.loginContent .loginList ul li i{ position:absolute; left:10px; z-index:2; top:10px; }
+.loginContent .loginList ul li img{ float: left;margin-left: 12px;vertical-align: middle; }
+.login_input{ height:41px; border:1px solid #9ecbbf;font-size:16px; border-radius:3px;/*  background: url(../images/inputBg.jpg) repeat-x; */ overflow:hidden; position:absolute; z-index:1; text-indent:50px;}
+.loginContent .loginList input{ 
+	border-radius: 3px;
+    border: solid 1px #3e4856;
+    width: 440px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    background-color: #283443;
+    color:#fff;
+}
+.login_txt {
+    font-size: 18px;
+    color: #a8a8a8;
+    padding-left: 10px;
+}
+
+.loginContent .loginList .btn { text-align:center; padding-top:15px;}
+.loginContent .loginList .btn button{ border:none;clear:both;width:79%;height:40px; border-radius:3px; font-size:18px;  color:#fff;margin-right:9px;cursor:pointer;text-align:center; outline:none;
+	/* background:url(../images/login_Btn_bg.jpg) repeat-x 0 0; */ overflow:hidden;background-color:#409eff;margin-top: -10px;}
+.loginContent .loginList .btn button:hover{ /* background:url(../images/login_Btn_bg.jpg) repeat-x 0 -43px; */background-color:#66b1ff}
+
+.copyright { text-align:center; color:#999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

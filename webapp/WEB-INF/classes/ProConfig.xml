@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="GB2312"?>
+<proconfig>
+    <DataSrcList>
+           <DataSrc>
+	          <name>ais</name>
+	          <type>DBCP</type>
+	          <dbType>ORACLE</dbType>
+	      
+	         
+	          <!-- <srcUrl>jdbc:oracle:thin:@39.106.33.71:1521:AIPACS</srcUrl>
+	          <minLimit>5</minLimit>
+	          <maxLimit>30</maxLimit>
+	          <userName>AIS_Test</userName>
+	          <password>4A4258545F6E787F</password>  
+	          <propString>maxWait=5000;maxIdle=50</propString> -->
+	           
+	          <srcUrl>jdbc:oracle:thin:@10.10.2.108:1521:AIPACS</srcUrl>
+	          <minLimit>5</minLimit>
+	          <maxLimit>30</maxLimit>
+	          <userName>AIS_Test</userName>
+	          <password>4A4258545F6E787F</password>  
+	          <propString>maxWait=5000;maxIdle=50</propString>
+	    
+	      	 <!-- <srcUrl>jdbc:oracle:thin:@192.168.1.7:1521:AIPACS</srcUrl>
+	          <minLimit>5</minLimit>
+	          <maxLimit>30</maxLimit>
+	          <userName>BPRIS</userName>
+	          <password>BPRIS</password>
+	          <propString>maxWait=5000;maxIdle=50</propString> -->  
+	       </DataSrc>
+ 		
+	       <!--<DataSrc>-->
+	          <!--<name>pacs_sjcx</name>-->
+	          <!--<type>DBCP</type>-->
+	          <!--<dbType>ORACLE</dbType>-->
+	          <!--<srcUrl>jdbc:oracle:thin:@10.63.90.25:1521:xydbcs</srcUrl>-->
+ 	          <!--<minLimit>5</minLimit>-->
+	          <!--<maxLimit>30</maxLimit>-->
+	          <!--<userName>pacs_sjcx</userName>-->
+	          <!--<password>{o}pacs_sjcx</password>-->
+	          <!--<propString>maxWait=5000;maxIdle=50</propString>-->
+	      <!--</DataSrc>-->
+
+    </DataSrcList>
+    <transactionlist default-transaction="local" independence-transaction="local"
+                     container-implclass="com.ai.appframe2.transaction.TransactionLocal">
+    	<transaction name="local" implclass="com.ai.appframe2.transaction.TransactionLocal"  default-datasource="ais">
+    		<DataSrcLink ailas-name="ais" actul-name="ais"></DataSrcLink>
+    		<DataSrcLink ailas-name="pacs_sjcx" actul-name="pacs_sjcx"></DataSrcLink>
+    	</transaction>
+    </transactionlist>
+    
+    <!-- 注意要放在ais上面 -->
+    <service-mapping>
+        <service name="com.ai.aris.server.jchis"
+                 service-type="singleton" transaction-name="local" transaction-type="join" datasource-name="pacs_sjcx"/>
+    </service-mapping>
+    
+    <service-mapping>
+        <service name="com.ai.aris"
+                 service-type="singleton" transaction-name="local" transaction-type="join" datasource-name="ais"/>
+    </service-mapping>
+    
+</proconfig>

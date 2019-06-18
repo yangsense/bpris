@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryCareProv" mainattr="CAREPROV_ID">
+    <mapingenty type="query">
+select a.*,b.operator_code,b.operator_id
+  from Aisc_CareProv a, aisc_user2careprov b
+ where a.careprov_id = b.careprov_id</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="CAREPROV_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CAREPROV_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CAREPROV_TYPEID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CAREPROV_TYPEID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CAREPROV_CODE" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CAREPROV_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CAREPROV_NAME" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CAREPROV_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_CODE" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">OPERATOR_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

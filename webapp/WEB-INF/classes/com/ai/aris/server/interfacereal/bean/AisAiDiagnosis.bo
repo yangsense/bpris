@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisAiDiagnosis" mainattr="GLOBAL_STUDY_ID">
+    <mapingenty type="table">AIS_AI_DIAGNOSIS</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="GLOBAL_STUDY_ID" maxlength="16" datatype="Long" type="PK" isDict="false">
+        <mapingcol datatype="NUMBER">GLOBAL_STUDY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_NAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_DATE" maxlength="64" datatype="String" type="COL" remark=" " isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_TYPE" maxlength="20" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDY_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_GENDER" maxlength="20" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">PATIENT_GENDER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_BIRTHDAY" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_BIRTHDAY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPLOAD_TIME" maxlength="20" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">UPLOAD_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPLOAD_IMG_NUM" maxlength="20" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">UPLOAD_IMG_NUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESULT_ID" maxlength="20" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">RESULT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESULT_MSG" maxlength="1000" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">RESULT_MSG</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPDATE_TIME" maxlength="20" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">UPDATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CODE" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MESSAGE" maxlength="1000" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">MESSAGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATUS" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATUS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

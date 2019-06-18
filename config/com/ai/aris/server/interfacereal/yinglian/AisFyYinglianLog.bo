@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisFyYinglianLog" mainattr="REQUEST_ID">
+    <mapingenty type="table">AIS_FY_YINGLIAN_LOG</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="REQUEST_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REQUEST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REQUEST_BODY" maxlength="4000" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REQUEST_BODY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESPONSEBODY" maxlength="4000" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">RESPONSEBODY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INTERFACE_TYPE" maxlength="1" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="CHAR">INTERFACE_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

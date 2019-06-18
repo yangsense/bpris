@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisReportFiles" mainattr="REPORTFILE_ID">
+    <mapingenty type="table">AIS_REPORTFILES</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="REPORTFILE_ID" maxlength="19" datatype="Long" type="PK" remark="主键">
+        <mapingcol datatype="NUMBER">REPORTFILE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ID" maxlength="19" datatype="Long" type="COL" remark="报告表ID ">
+        <mapingcol datatype="NUMBER">REPORT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_ID" maxlength="19" datatype="Long" type="COL" remark="文件表ID">
+        <mapingcol datatype="NUMBER">FILE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATUS" maxlength="2" datatype="String" type="COL" remark="0 审核 1 终审">
+        <mapingcol datatype="VARCHAR2">STATUS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

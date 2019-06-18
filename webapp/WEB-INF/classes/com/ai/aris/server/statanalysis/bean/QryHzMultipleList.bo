@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryHzMultipleList" mainattr="COUNTY_CODE">
+    <mapingenty type="query">select (select org_name from sys_org s where a.org_id = s.org_id) org_name,b.city_code,b.county_code,b.county_desc,a.org_id,count(*) hzsqsl,to_char(a.study_datetime,'yyyy-mm-dd') study_datetime,count(c.report_id) hzsl from ais_studyinfo a ,AISC_AreaInstitution b,ais_studyreport c  where
+     a.org_id=b.org_id 
+     and a.studyinfo_id=c.studyinfo_id(+)
+     and study_type = '1' 
+   group by b.city_code,b.county_code,b.county_desc,a.org_id,to_char(a.study_datetime,'yyyy-mm-dd')</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_CODE" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CITY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_CODE" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_DESC" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HZSQSL" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">HZSQSL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_DATETIME" maxlength="10" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_DATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HZSL" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">HZSL</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

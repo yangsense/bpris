@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscBoardroom" mainattr="BOARDROOM_ID">
+    <mapingenty type="table">AISC_BOARDROOM</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="BOARDROOM_ID" maxlength="20" datatype="Long" type="PK" remark="会议室ID" isDict="false">
+        <mapingcol datatype="NUMBER">BOARDROOM_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BOARDROOM_NAME" maxlength="32" datatype="String" type="COL" remark="会议室名" isDict="false">
+        <mapingcol datatype="VARCHAR2">BOARDROOM_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VERIFYMODE" maxlength="1" datatype="String" type="COL" remark="登录校验模型 1、用户密码验证；2、会议室密码验证；3、匿名登录" isDict="false">
+        <mapingcol datatype="CHAR">VERIFYMODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PASSWORD" maxlength="32" datatype="String" type="COL" remark="会议室密码" isDict="false">
+        <mapingcol datatype="VARCHAR2">PASSWORD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MAXUSERCOUNT" maxlength="11" datatype="Long" type="COL" remark="允许最大用户数" isDict="false">
+        <mapingcol datatype="NUMBER">MAXUSERCOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ENABLECHAIRPWD" maxlength="1" datatype="String" type="COL" remark="是否允许主席密码 0不启用，1启用" isDict="false">
+        <mapingcol datatype="CHAR">ENABLECHAIRPWD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHAIRPASSWORD" maxlength="32" datatype="String" type="COL" remark="主席密码" isDict="false">
+        <mapingcol datatype="VARCHAR2">CHAIRPASSWORD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="KEYCODE" maxlength="32" datatype="String" type="COL" remark="密钥" isDict="false">
+        <mapingcol datatype="VARCHAR2">KEYCODE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

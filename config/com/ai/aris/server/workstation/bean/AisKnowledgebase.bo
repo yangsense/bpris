@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisKnowledgebase" mainattr="KNOWLEDGEBASEID">
+    <mapingenty type="table">AIS_KNOWLEDGEBASE</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="KNOWLEDGEBASEID" maxlength="19" datatype="Long" type="PK" remark="主键" isDict="false">
+        <mapingcol datatype="NUMBER">KNOWLEDGEBASEID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COLLECTOR_CODE" maxlength="200" datatype="String" type="COL" remark="病例收藏者用户代码,根据这个用户代码，查询自己收藏的知识库病例" isDict="false">
+        <mapingcol datatype="VARCHAR2">COLLECTOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ID" maxlength="19" datatype="Long" type="COL" remark="AIS_StudyRpeort ID" isDict="false">
+        <mapingcol datatype="NUMBER">REPORT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CASEGROUPDESC" maxlength="200" datatype="String" type="COL" remark="病例分类描述，可以是部位/疾病的分类,在展现时 " isDict="false">
+        <mapingcol datatype="VARCHAR2">CASEGROUPDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="KEYDESC" maxlength="32" datatype="String" type="COL" remark="报告关键字，用于报告医生能根据关键字去整理自己的病例" isDict="false">
+        <mapingcol datatype="VARCHAR2">KEYDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATE_DATETIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间" isDict="false">
+        <mapingcol datatype="DATE">OPERATE_DATETIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

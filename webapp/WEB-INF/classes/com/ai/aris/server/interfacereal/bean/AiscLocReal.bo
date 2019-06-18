@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscLocReal" mainattr="LOC_REAL_ID">
+    <mapingenty type="table">AISC_LOC_REAL</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="LOC_REAL_ID" maxlength="8" datatype="Long" type="PK" remark="接口科室信息关系表ID 主键">
+        <mapingcol datatype="NUMBER">LOC_REAL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="8" datatype="Long" type="COL" remark="科室ID">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OLD_LOC_ID" maxlength="8" datatype="Long" type="COL" remark="目标数据源科室ID">
+        <mapingcol datatype="NUMBER">OLD_LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" remark="机构ID">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

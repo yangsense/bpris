@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="SysOffice" mainattr="OFFICE_ID">
+    <mapingenty type="table">SYS_OFFICE</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="OFFICE_ID" maxlength="100" datatype="String" type="PK" remark="科室ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">OFFICE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_CODE" maxlength="100" datatype="String" type="COL" remark="组织机构编码" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OFFICE_CODE" maxlength="100" datatype="String" type="COL" remark="科室编码" isDict="false">
+        <mapingcol datatype="VARCHAR2">OFFICE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间" isDict="false">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="10" datatype="String" type="COL" remark="0有效，1无效" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OFFICE_NAME" maxlength="300" datatype="String" type="COL" remark="科室名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">OFFICE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_PERSON" maxlength="300" datatype="String" type="COL" remark="创建人" isDict="false">
+        <mapingcol datatype="VARCHAR2">CREATE_PERSON</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

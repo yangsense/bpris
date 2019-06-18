@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisStudyItemInfo" mainattr="STUDYITEM_ID">
+    <mapingenty type="table">AIS_STUDYITEMINFO</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="STUDYITEM_ID" maxlength="19" datatype="Long" type="PK" remark="主键" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYITEM_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="19" datatype="Long" type="COL" remark="StudyInfo表 主键" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_HISID" maxlength="16" datatype="String" type="COL" remark="HIS 申请 ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_HISID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_CODE" maxlength="64" datatype="String" type="COL" remark="检查项目代码（医嘱代码）" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_DESC" maxlength="32" datatype="String" type="COL" remark="检查项目名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_BODYINFO" maxlength="512" datatype="String" type="COL" remark="部位信息" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_BODYINFO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_ENDESC" maxlength="32" datatype="String" type="COL" remark="检查项目名称（英文）" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="2" name="STUDYITEM_PRICE" maxlength="8" datatype="Float" type="COL" remark="检查项目单价" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYITEM_PRICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_NUMBER" maxlength="1" datatype="Integer" type="COL" remark="检查项目数量" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYITEM_NUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_STATUS" maxlength="2" datatype="String" type="COL" remark="检查项目状态（N正常,S停止）" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_ITEMNO" maxlength="16" datatype="String" type="COL" remark="检查序号" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_ITEMNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_BODYPART" maxlength="256" datatype="String" type="COL" remark="部位信息" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_BODYPART</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

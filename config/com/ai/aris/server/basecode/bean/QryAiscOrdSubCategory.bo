@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryAiscOrdSubCategory" mainattr="ORDSUBCATEGORY_ID">
+    <mapingenty type="query">select t.*,o.ordcategory_desc  from aisc_ordsubcategory t ,aisc_ordcategory o  where  t.ordcategory_id=o.ordcategory_id</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORDSUBCATEGORY_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ORDSUBCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCATEGORY_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ORDCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_CODE" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_ENDESC" maxlength="48" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_NOTE" maxlength="2048" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_NOTE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCATEGORY_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORDCATEGORY_DESC</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

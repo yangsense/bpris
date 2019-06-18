@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QrybodypartList" mainattr="BODYPART_CODE">
+    <mapingenty type="query">select b.org_id,a.bodypart_code,a.bodypart_endesc,a.bodypart_order,a.bodypart_desc,(select itemmast_desc from aisc_itemmast where itemmast_id=b.itemmast_id) itemmast_desc from AISC_BodyPart a,AISC_BodyPart2Item b where a.bodypart_code = b.bodypart_code</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_CODE" maxlength="8" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BODYPART_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_ENDESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BODYPART_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_ORDER" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">BODYPART_ORDER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BODYPART_DESC" maxlength="18" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BODYPART_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ITEMMAST_DESC" maxlength="128" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ITEMMAST_DESC</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

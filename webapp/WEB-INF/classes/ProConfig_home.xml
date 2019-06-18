@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GB2312"?>
+<proconfig>
+    <DataSrcList>
+           <DataSrc>
+	          <name>xyykt</name>
+	          <type>DBCP</type>
+	          <dbType>ORACLE</dbType>
+	          <srcUrl>jdbc:oracle:thin:@10.63.80.20:1521:xyykt</srcUrl>
+	          <minLimit>0</minLimit>
+	          <maxLimit>5</maxLimit>
+	          <userName>asiainfo</userName>
+	          <password>{o}asiainfo</password>
+	          <propString>maxWait=3000;maxIdle=50</propString>
+	      </DataSrc>
+    </DataSrcList>
+    <transactionlist default-transaction="local" independence-transaction="local"
+                     container-implclass="com.ai.appframe2.transaction.TransactionLocal">
+    	<transaction name="local" implclass="com.ai.appframe2.transaction.TransactionLocal"  default-datasource="xyykt">
+    		<DataSrcLink ailas-name="xyykt" actul-name="xyykt"></DataSrcLink>
+    	</transaction>
+    </transactionlist>
+
+    <service-mapping>
+        <service name="com.ai.aris"
+                 service-type="singleton" transaction-name="local" transaction-type="join" datasource-name="xyykt"/>
+    </service-mapping>
+
+</proconfig>

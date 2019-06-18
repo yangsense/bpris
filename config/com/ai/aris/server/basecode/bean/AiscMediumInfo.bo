@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscMediumInfo" mainattr="MEDIUM_ID">
+    <mapingenty type="table">AISC_MEDIUMINFO</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="MEDIUM_ID" maxlength="8" datatype="Long" type="PK" remark="主键">
+        <mapingcol datatype="NUMBER">MEDIUM_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_ID" maxlength="8" datatype="Long" type="COL" remark="服务器ID ">
+        <mapingcol datatype="NUMBER">SERVER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_NAME" maxlength="16" datatype="String" type="COL" remark="介质名称">
+        <mapingcol datatype="VARCHAR2">MEDIUM_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_PATH" maxlength="32" datatype="String" type="COL" remark="介质路径">
+        <mapingcol datatype="VARCHAR2">MEDIUM_PATH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ISFULL" maxlength="1" datatype="Integer" type="COL" remark="1 已满
+0 未满
+">
+        <mapingcol datatype="NUMBER">MEDIUM_ISFULL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ISONLINE" maxlength="1" datatype="Integer" type="COL" remark="是否在线 1 在线
+0 离线
+">
+        <mapingcol datatype="NUMBER">MEDIUM_ISONLINE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_SIZE" maxlength="12" datatype="Long" type="COL" remark="介质大小">
+        <mapingcol datatype="NUMBER">MEDIUM_SIZE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_REMINESIZE" maxlength="12" datatype="Long" type="COL" remark="剩余大小">
+        <mapingcol datatype="NUMBER">MEDIUM_REMINESIZE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ENABLED" maxlength="1" datatype="Integer" type="COL" remark="是否可用
+ 1 可用
+0 不可用
+">
+        <mapingcol datatype="NUMBER">MEDIUM_ENABLED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_TYPE" maxlength="1" datatype="Integer" type="COL" remark="介质类型     磁盘、光盘，磁盘">
+        <mapingcol datatype="NUMBER">MEDIUM_TYPE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

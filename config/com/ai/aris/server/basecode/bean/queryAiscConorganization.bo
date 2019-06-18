@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="queryAiscConorganization" mainattr="CONORGANIZAT_ID">
+    <mapingenty type="query">select a.Conorganizat_id,
+                       a.ConLoc_ID,
+                       a.loc_id,
+                       a.org_id,
+                       (select loc_desc
+                          from aisc_loc
+                         where loc_id = a.ConLoc_ID) hzks,
+                       a.conorg_id,
+                       (select org_name
+                          from sys_org
+                         where org_id = a.conorg_id) hzjgmc
+                  from AISC_Conorganization a</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="CONORGANIZAT_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CONORGANIZAT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONLOC_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONLOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HZKS" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">HZKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HZJGMC" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">HZJGMC</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

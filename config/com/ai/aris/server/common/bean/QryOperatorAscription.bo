@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryOperatorAscription" mainattr="OPERATOR_CODE">
+    <mapingenty type="query">select c.operator_code,c.operator_psw,c.operator_name,c.org_id from sys_operator2role a,sys_role b,sys_operator c where a.role_id=b.role_id and a.operator_code=c.operator_code and b.sys_type=25 and b.role_state=1 and c.operator_state=1 group by c.operator_code,c.operator_psw,c.operator_name,c.org_id</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="OPERATOR_CODE" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_PSW" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_PSW</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_NAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="20" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

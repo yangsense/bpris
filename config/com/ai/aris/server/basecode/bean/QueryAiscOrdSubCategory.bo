@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QueryAiscOrdSubCategory" mainattr="ORDSUBCATEGORY_ID">
+    <mapingenty type="query">select   a.*,b.org_id,b.ordcategory_desc,c.city_code,c.district_code county_code  from AISC_ORDSUBCATEGORY a,AISC_ORDCATEGORY b,sys_org c where a.ordcategory_id=b.ordcategory_id and b.org_id=c.org_id</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORDSUBCATEGORY_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ORDSUBCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCATEGORY_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">ORDCATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_CODE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_DESC" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_ENDESC" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDSUBCATEGORY_NOTE" maxlength="1024" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORDSUBCATEGORY_NOTE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="24" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORDCATEGORY_DESC" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORDCATEGORY_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_CODE" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CITY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_CODE" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">COUNTY_CODE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

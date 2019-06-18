@@ -1,0 +1,17 @@
+package com.ai.aris.server.workstation.service.interfaces;
+
+import java.util.List;
+import java.util.Map;
+
+import com.ai.aris.server.workstation.model.QryStudyInfoListModel;
+import com.ai.aris.server.workstation.model.QueryCheckMasterModel;
+import com.ai.common.domain.ResultDTO;
+
+public interface ICheckMasterSV {
+
+	public ResultDTO queryPageList(QueryCheckMasterModel model,String orgId, ResultDTO resultDTO) throws Exception;
+	
+	public List<Map>  getLocInfo(String orgId)throws Exception;
+	public  List queryStudyItem(QueryCheckMasterModel model) throws Exception;
+	public void updateCheck(QueryCheckMasterModel model) throws Exception;
+}

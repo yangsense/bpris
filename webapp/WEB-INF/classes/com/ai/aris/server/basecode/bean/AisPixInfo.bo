@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisPixInfo" mainattr="PATIENT_GLOBALID">
+    <mapingenty type="table">AIS_PIXINFO</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PATIENT_GLOBALID" maxlength="16" datatype="Long" type="COL" remark="病人信息表GlobalID">
+        <mapingcol datatype="NUMBER">PATIENT_GLOBALID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ID" maxlength="16" datatype="String" type="COL" remark="病人ID">
+        <mapingcol datatype="VARCHAR2">PATIENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="16" datatype="String" type="COL" remark="组织机构ID">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

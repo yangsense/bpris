@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryStudyItemInterface" mainattr="STUDYITEM_ID">
+    <mapingenty type="query">select a.org_id,a.studystatus_code,a.study_operationtime,b.* from ais_studyinfo a,ais_studyiteminfo b where a.studyinfo_id=b.studyinfo_id</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYSTATUS_CODE" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYSTATUS_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_OPERATIONTIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">STUDY_OPERATIONTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYITEM_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_HISID" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_HISID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_CODE" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_DESC" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_BODYINFO" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_BODYINFO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_ENDESC" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_PRICE" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYITEM_PRICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_NUMBER" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYITEM_NUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_STATUS" maxlength="2" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_ITEMNO" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_ITEMNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYITEM_BODYPART" maxlength="256" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDYITEM_BODYPART</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

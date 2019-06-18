@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AisRightControl" mainattr="ID">
+    <mapingenty type="table">AIS_RIGHT_CONTROL</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="32" datatype="String" type="COL" remark="id" isDict="false">
+        <mapingcol datatype="VARCHAR2">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_CODE" maxlength="64" datatype="String" type="COL" remark="机构名称" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL" remark="机构编码" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INSTALL_TIME" maxlength="300" datatype="String" type="COL" remark="安装时间" isDict="false">
+        <mapingcol datatype="VARCHAR2">INSTALL_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CURRENT_TIME" maxlength="300" datatype="String" type="COL" remark="当前最新时间" isDict="false">
+        <mapingcol datatype="VARCHAR2">CURRENT_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EXPIRATION_TIME" maxlength="100" datatype="String" type="COL" remark="到期时间" isDict="false">
+        <mapingcol datatype="VARCHAR2">EXPIRATION_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPDATE_TIME" maxlength="300" datatype="String" type="COL" remark="更新时间" isDict="false">
+        <mapingcol datatype="VARCHAR2">UPDATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="300" datatype="String" type="COL" remark="第一次创建时间" isDict="false">
+        <mapingcol datatype="VARCHAR2">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_MAC" maxlength="300" datatype="String" type="COL" remark="部署服务器mac" isDict="false">
+        <mapingcol datatype="VARCHAR2">SERVER_MAC</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

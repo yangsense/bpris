@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="AiscLocTest" mainattr="LOC_ID">
+    <mapingenty type="table">AISC_LOC_TEST</mapingenty>
+    <genModel>false</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="LOC_ID" maxlength="8" datatype="Long" type="PK" remark="主键" isDict="false">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_CODE" maxlength="16" datatype="String" type="COL" remark="科室代码" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_INDEX" maxlength="16" datatype="String" type="COL" remark="科室拼音检索" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_INDEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_DESC" maxlength="32" datatype="String" type="COL" remark="科室描述" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ENDESC" maxlength="64" datatype="String" type="COL" remark="科室英文描述" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_ENDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_PHONE" maxlength="32" datatype="String" type="COL" remark="科室电话" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_PHONE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ADDRESS" maxlength="128" datatype="String" type="COL" remark="科室地址" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_ADDRESS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_TYPE" maxlength="2" datatype="String" type="COL" remark="科室类型
+E: 执行科室
+A: 申请科室
+B: 病区
+O: 其它
+" isDict="false">
+        <mapingcol datatype="VARCHAR2">LOC_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_ID" maxlength="8" datatype="Long" type="COL" remark="服务器ID" isDict="false">
+        <mapingcol datatype="NUMBER">SERVER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" remark="组织结构ID" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

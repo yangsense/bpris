@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryRisInfo" mainattr="STUDY_CONSULTORG">
+    <mapingenty type="query">select a.org_id,a.study_consultorg, a.Study_Type, a.StudyInfo_ID, b.patient_id, b.patient_name, a.Study_ItemDesc, a.study_Accnumber, a.loc_id, a.Study_StartTime, a.Study_EndTime, a.Study_DateTime, a.Study_OperationTime from AIS_StudyInfo a, AIS_PatientInfo b where a.patient_globalid = b.patient_globalid</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_CONSULTORG" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_CONSULTORG</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_TYPE" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDY_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ID" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="16" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ITEMDESC" maxlength="128" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_ITEMDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ACCNUMBER" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STUDY_ACCNUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_STARTTIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">STUDY_STARTTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ENDTIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">STUDY_ENDTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_DATETIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">STUDY_DATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_OPERATIONTIME" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">STUDY_OPERATIONTIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

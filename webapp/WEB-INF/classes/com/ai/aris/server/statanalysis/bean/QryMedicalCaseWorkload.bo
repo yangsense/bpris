@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryMedicalCaseWorkload" mainattr="REPORT_DATETIME">
+    <mapingenty type="query">select distinct c.Report_DateTime,
+                c.Report_DoctorID,
+                (select cp.careprov_name
+                   from AISC_CareProv cp
+                  where cp.careprov_id = c.Report_DoctorID) Report_Doctorname,
+                c.Report_IsPositive,
+                b.Patient_Age,
+                a.Patient_Name,
+                a.patient_sex,
+                b.Study_ItemDesc,
+                a.patient_id,
+                b.org_id,
+                b.Study_HaveImage,
+                b.Study_HaveReport,
+                b.study_Accnumber,
+                b.StudyInfo_ID,
+                b.patient_globalid,
+                b.loc_id,
+                c.report_id,
+                c.report_finaldoctorid,
+                c.Report_VerifyDoctorID,
+                to_char(c.report_exam) report_exam,
+                to_char(c.report_result) report_result,
+                (select cp.careprov_name
+                   from AISC_CareProv cp
+                  where cp.careprov_id = c.Report_VerifyDoctorID) verifyDoctor_name,
+                  b.studystatus_code  
+  from ais_patientinfo a, AIS_StudyInfo b, AIS_StudyReport c
+ where a.patient_globalid = b.patient_globalid
+   and b.studyinfo_id = c.studyinfo_id</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="REPORT_DATETIME" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">REPORT_DATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_DOCTORID" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REPORT_DOCTORID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_DOCTORNAME" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REPORT_DOCTORNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ISPOSITIVE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">REPORT_ISPOSITIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_AGE" maxlength="8" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PATIENT_AGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_NAME" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PATIENT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_SEX" maxlength="8" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PATIENT_SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ITEMDESC" maxlength="128" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDY_ITEMDESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PATIENT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_HAVEIMAGE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STUDY_HAVEIMAGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_HAVEREPORT" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STUDY_HAVEREPORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDY_ACCNUMBER" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDY_ACCNUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYINFO_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STUDYINFO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PATIENT_GLOBALID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">PATIENT_GLOBALID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">REPORT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_FINALDOCTORID" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REPORT_FINALDOCTORID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_VERIFYDOCTORID" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REPORT_VERIFYDOCTORID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_EXAM" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REPORT_EXAM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORT_RESULT" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REPORT_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VERIFYDOCTOR_NAME" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">VERIFYDOCTOR_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUDYSTATUS_CODE" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STUDYSTATUS_CODE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QueryOfficeName" mainattr="ID">
+    <mapingenty type="query">select  a.*,b.office_name  from  sys_operator_office a,sys_office b   where a.office_id=b.office_id</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="30" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RELATION_ID" maxlength="30" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">RELATION_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_CODE" maxlength="100" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OFFICE_ID" maxlength="100" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">OFFICE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIMES" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">CREATE_TIMES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="10" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="30" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OFFICE_NAME" maxlength="300" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">OFFICE_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

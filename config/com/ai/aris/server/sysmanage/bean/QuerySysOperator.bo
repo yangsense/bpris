@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QuerySysOperator" mainattr="OPERATOR_ID">
+    <mapingenty type="query">select M.*, TO_CHAR(M.CREATE_DATE, 'YYYY-MM-DD HH24:MI:SS') AS SHOW_CREATE_DATE, TO_CHAR(M.CHANGE_PSW_DATE, 'YYYY-MM-DD HH24:MI:SS') AS SHOW_CHANGE_PSW_DATE, B.ORG_NAME from SYS_OPERATOR M,SYS_OPERATOR2ORG A,SYS_ORG B WHERE M.OPERATOR_CODE = A.OPERATOR_CODE AND A.ORG_ID = B.ORG_ID AND A.STATION_CODE = 'STAFF_BELONG_ORG'</mapingenty>
+    <genModel>true</genModel>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="OPERATOR_ID" maxlength="22" datatype="Long" type="COL" isDict="false">
+        <mapingcol datatype="NUMBER">OPERATOR_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_CODE" maxlength="32" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_NAME" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_PSW" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">OPERATOR_PSW</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATOR_STATE" maxlength="22" datatype="Long" type="COL" isDict="true" dictDesc="operatorStateDesc" dictType="OPERATOR_STATE">
+        <mapingcol datatype="NUMBER">OPERATOR_STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHANGE_PSW_DATE" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">CHANGE_PSW_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_DATE" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">CREATE_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARKS" maxlength="512" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">REMARKS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CERT_NO" maxlength="64" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">CERT_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SEX_CODE" maxlength="4" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SEX_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BIRTHDAY" maxlength="7" datatype="DateTime" type="COL" isDict="false">
+        <mapingcol datatype="DATE">BIRTHDAY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EMAIL" maxlength="100" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">EMAIL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="POSITION_LEVEL_CODE" maxlength="40" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">POSITION_LEVEL_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="POSITION_CODE" maxlength="40" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">POSITION_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EMP_PHOTO" maxlength="200" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">EMP_PHOTO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ADDRESS_PROV_CODE" maxlength="40" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ADDRESS_PROV_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ADDRESS_AREA_CODE" maxlength="40" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ADDRESS_AREA_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ADDRESS_CITY_CODE" maxlength="40" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ADDRESS_CITY_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ADDRESS_TOWN_CODE" maxlength="40" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ADDRESS_TOWN_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ADDRESS_VILLAGE_CODE" maxlength="40" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ADDRESS_VILLAGE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ADDRESS_DETAIL" maxlength="200" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ADDRESS_DETAIL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="20" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEL_NO" maxlength="20" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">TEL_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHOW_CREATE_DATE" maxlength="19" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SHOW_CREATE_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SHOW_CHANGE_PSW_DATE" maxlength="19" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">SHOW_CHANGE_PSW_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_NAME" maxlength="200" datatype="String" type="COL" isDict="false">
+        <mapingcol datatype="VARCHAR2">ORG_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

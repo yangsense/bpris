@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="ais" name="QryServerMedium" mainattr="SERVER_ID">
+    <mapingenty type="query">select a.server_id,
+       a.server_name,
+       a.server_ip,
+       a.server_port,
+       a.server_type,
+       a.server_user,
+       a.server_password,
+       a.server_enabled,
+       b.medium_path,
+       b.medium_isfull,
+       b.medium_isonline,
+       b.medium_size,
+       b.medium_reminesize,
+       b.medium_enabled,
+       b.medium_type,
+       b.medium_id,
+       c.loc_id,
+       c.loc_code,
+       c.loc_desc
+  from AISC_SeverInfo a, AISC_MediumInfo b, aisc_loc c
+ where a.server_id = b.server_id
+   and a.server_id = c.server_id
+</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="SERVER_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SERVER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_NAME" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SERVER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_IP" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SERVER_IP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_PORT" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SERVER_PORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_TYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SERVER_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_USER" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SERVER_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_PASSWORD" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SERVER_PASSWORD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SERVER_ENABLED" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SERVER_ENABLED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_PATH" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MEDIUM_PATH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ISFULL" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_ISFULL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ISONLINE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_ISONLINE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_SIZE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_SIZE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_REMINESIZE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_REMINESIZE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ENABLED" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_ENABLED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_TYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MEDIUM_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MEDIUM_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_CODE" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOC_DESC" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOC_DESC</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>
